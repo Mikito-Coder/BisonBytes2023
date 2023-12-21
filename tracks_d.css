@@ -2,8 +2,8 @@ body{
     background-color:snow ;
 }
 .tracks{
-    width:200px;
-    height: 300px;
+    width:600px;
+    height: 400px;
     background-color: greenyellow;
 }
 .card{
@@ -11,8 +11,9 @@ body{
     height: 100%;
     color:red;
     position: relative;
-    background-color: black;
     transition: transform 1500ms ;
+    transform-style: preserve-3d;
+    /*transform: scale(0.4, 0.4);*/
 }
 
 .card:hover{
@@ -20,9 +21,25 @@ body{
     transform: rotateY(180deg);
 }
 .front,.back{
-    height: 20%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
     color:aqua;
     border-radius: 2rem;
     position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.front {
+background-color: blue;
+}
+.front img {
+    height: auto;
+    max-width: 100%;
+   }
+
+.back{
+    background-color: yellow;
+    transform: rotateY(180deg);
+    color: black;
 }
