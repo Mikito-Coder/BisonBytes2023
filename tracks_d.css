@@ -62,10 +62,13 @@ body {
 }
 
 .back {
-  background-color: rgb(51, 124, 187);
+  background-color: white;
   transform: rotateY(180deg);
   color: black;
   opacity: 80%;
+}
+.back img{
+    width: 100%;
 }
 
 @media screen and (max-width: 700px) {
