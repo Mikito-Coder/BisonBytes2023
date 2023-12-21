@@ -1,56 +1,81 @@
-body{
-    background-color:snow ;
+body {
+  background-color: snow;
 }
 
-.tracks{
-    background-color: rgb(41, 180, 239);
+.tracks_part {
+  background-color: rgb(0, 48, 91);
 }
-.row_tracks{
-    margin: 2rem auto;
-    max-width: calc(100% - 80px);
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(256px,1fr));
-    gap: 2rem;
-    grid-gap: 200px;
-    padding: 50px;
+.track_titel {
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
-.card{
-    width:400px;
-    height: 400px;
-    color:red;
-    position: relative;
+.tracks_items {
+  vertical-align: middle;
+  align-items: center;
 
-    transition: transform 1500ms ;
-    transform-style: preserve-3d;
-    /*transform: scale(0.4, 0.4);*/
+  margin: 2rem auto;
+  max-width: calc(100% - 80px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: 2rem;
+  grid-gap: 200px;
+  padding: 100px;
+  place-items: center;
+}
+.card {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  text-align: center;
+
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  /*transform: scale(0.4, 0.4);*/
 }
 
-.card:hover{
-    cursor: pointer;
-    transform: rotateY(180deg);
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
-.front,.back{
-    height: 100%;
-    width: 100%;
-    color:aqua;
-    padding: 0;
-    margin: 0;
-    border-radius: 2rem;
-    position: absolute;
-    backface-visibility: hidden;
-    
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  color: black;
+  text-align: center;
+
+  padding: 10px;
+  margin: 0;
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .front {
-background-color: blue;
+  background-color: white;
+  opacity: 80%;
 }
-.front img {
-    height: auto;
-    max-width: 100%;
-   }
 
-.back{
-    background-color: black;
-    transform: rotateY(180deg);
-    color: white;
+.back {
+  background-color: rgb(51, 124, 187);
+  transform: rotateY(180deg);
+  color: black;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .row_tracks {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .row_tracks {
+    grid-template-columns: 1fr; /* 2 items per row */
+  }
 }
