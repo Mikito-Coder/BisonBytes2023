@@ -1,0 +1,11 @@
+.computer_pic{
+    width: 400px;
+  height: 300px;
+  background-color: aquamarine;
+}
+.computer_pic img{
+   height: 1800px;
+}
+.filler{
+    height: 1600px;
+}
