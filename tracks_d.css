@@ -23,7 +23,7 @@ body {
   padding: 100px;
   place-items: center;
 }
-.card {
+.track_card {
   width: 400px;
   height: 300px;
   position: relative;
@@ -34,7 +34,7 @@ body {
   /*transform: scale(0.4, 0.4);*/
 }
 
-.card:hover {
+.track_card:hover {
   cursor: pointer;
   transform: rotateY(180deg);
 }

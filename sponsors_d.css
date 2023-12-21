@@ -1,0 +1,36 @@
+.sponsor_part{
+    background-color: rgb(255, 232, 168);
+
+}
+.TERA{
+    height: 100px;
+    margin: 100px;
+    padding: 20px;
+}
+.TERA img{
+    width: 30%;
+}
+.GIGA{
+    height: 100px;
+    margin: 100px;
+    padding: 20px;
+}
+.GIGA img{
+    width: 25%;
+}
+.MEGA{
+    height: 100px;
+    margin: 100px;
+    padding: 20px;
+}
+.MEGA img{
+    width: 20%;
+}
+.KILO{
+    height: 100px;
+    margin: 100px;
+    padding: 20px;
+}
+.KILO img{
+    width: 10%;
+}
