@@ -1,16 +1,25 @@
 body{
     background-color:snow ;
 }
+
 .tracks{
-    width:600px;
-    height: 400px;
-    background-color: greenyellow;
+    background-color: rgb(41, 180, 239);
+}
+.row_tracks{
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(256px,1fr));
+    gap: 2rem;
+    grid-gap: 200px;
+    padding: 50px;
 }
 .card{
-    width:100%;
-    height: 100%;
+    width:400px;
+    height: 400px;
     color:red;
     position: relative;
+
     transition: transform 1500ms ;
     transform-style: preserve-3d;
     /*transform: scale(0.4, 0.4);*/
@@ -24,6 +33,8 @@ body{
     height: 100%;
     width: 100%;
     color:aqua;
+    padding: 0;
+    margin: 0;
     border-radius: 2rem;
     position: absolute;
     backface-visibility: hidden;
@@ -39,7 +50,7 @@ background-color: blue;
    }
 
 .back{
-    background-color: yellow;
+    background-color: black;
     transform: rotateY(180deg);
-    color: black;
+    color: white;
 }
