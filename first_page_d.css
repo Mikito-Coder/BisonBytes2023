@@ -1,11 +1,11 @@
-.computer_pic{
+div{
     width: 400px;
   height: 300px;
   background-color: aquamarine;
+  position: absolute;
+  cursor: move;
 }
-.computer_pic img{
-   height: 1800px;
-}
-.filler{
-    height: 1600px;
+.exit{
+    height: 20%;
+    background-color: brown;
 }
