@@ -5,27 +5,33 @@
     <link rel="stylesheet" type="text/css" href="first_page_d.css" />
     <link rel="stylesheet" type="text/css" href="sponsors_d.css" />
     <link rel="stylesheet" type="text/css" href="tracks_d.css" />
-
+    <title>BisonBytes</title>
 
 </head>
 
 <body >
-    <div class="mac_top_bar">
+    
+    <div class="top_bar">
+        <div class="top_logo">
+            <img src="images/logos/BisonBytes-yellowCompMark-plain.png" alt="">
+
+        </div>
+        <span id="datetime"></span>
+
 
     </div>
     
-    
 
-    <div class="large_wide_window" onclick="move(this)">
+    <div class="large_wide_window" onclick="move(this);">
         <div class="window_box">
             <div class = "top_box">
                 <div class = "top_click_box">
-    
+                    <div class="exit_box" onclick="hideShow(this)">
+                        <h1>X</h1>
+                
+                    </div>
                 </div>
-                <div class="exit_box" onclick="hideShow(this)">
-                    <h1>X</h1>
-            
-                </div>
+                
             </div>
 
             <div class="tracks_part">
@@ -47,7 +53,7 @@
                       <h1 class = "track_text">Health</h1>
                     </div>
                     <div class="back">
-                      <img src="images/Palantir_logo.jpg">            
+                      <img src="images/sponsors/Palantir_logo.jpg">            
                     </div>
                   </div>
           
@@ -89,16 +95,20 @@
                 </div>
               </div>
         
+
+
+
+
             <div class="mid_window" onclick="move(this)">
                 <div class="window_box">
                     <div class = "top_box">
                         <div class = "top_click_box">
-            
+                            <div class="exit_box" onclick="hideShow(this)">
+                                <h1>X</h1>
+                        
+                            </div>
                         </div>
-                        <div class="exit_box" onclick="hideShow(this)">
-                            <h1>X</h1>
-                    
-                        </div>
+                        
                     </div>
                     
                 </div>
@@ -109,12 +119,12 @@
                 <div class="window_box">
                     <div class = "top_box">
                         <div class = "top_click_box">
-            
+                            <div class="exit_box" onclick="hideShow(this)">
+                                <h1>X</h1>
+                        
+                            </div>
                         </div>
-                        <div class="exit_box" onclick="hideShow(this)">
-                            <h1>X</h1>
-                    
-                        </div>
+                        
                     </div>
                     <div class="sponsor_part">
                         <div class="sponsor_head">
@@ -167,7 +177,7 @@
 
     </div>
 
-    <div class="mid_window" onclick="move(this)">
+    <div class="mid_window" onclick="move(this);" >
         <div class="window_box">
             <div class = "top_box">
                 <div class = "top_click_box">
@@ -188,5 +198,9 @@
    
     
     <script src="move_box.js"></script>
+    <script src="main_page_f.js">
+        
+    </script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@ body {
 }
 
 .tracks_part {
-  background-color: rgb(64, 120, 169);
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
     overflow-y: scroll;
     width: 100%;
@@ -12,7 +12,8 @@ body {
 .track_titel {
   padding: 10px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
+  
 }
 .tracks_items {
   vertical-align: middle;
@@ -27,6 +28,8 @@ body {
   
   place-items: center;
   
+
+  
 }
 .track_card {
   width: 160px;
@@ -37,6 +40,8 @@ body {
   transition: transform 1500ms;
   transform-style: preserve-3d;
   /*transform: scale(0.4, 0.4);*/
+  
+
 }
 
 .track_card:hover {
@@ -59,21 +64,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 2px solid;
+
 }
 
 .front {
-  background-color: white;
+  background-color: FFCD4B;
   opacity: 80%;
+  box-shadow: 5px 5px 5px rgb(86, 85, 80);
 }
 
 .back {
-  background-color: white;
   transform: rotateY(180deg);
   color: black;
-  opacity: 80%;
+  opacity: 100%;
+
 }
 .back img{
     width: 100%;
+    opacity: 100%;
 }
 
 /* @media screen and (max-width: 700px) {
@@ -88,3 +97,6 @@ body {
   }
 } 
 */
+.track_text{
+  font-size:110%;
+}

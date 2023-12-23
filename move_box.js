@@ -26,7 +26,7 @@ function move(ele_clicked) {
                 the_element.style.position = 'absolute';
                 the_element.style.left = `${x}px`;
                 the_element.style.top = `${y}px`;
-                console.log(x,y)
+                //console.log(x,y)
 
             }
 
@@ -94,7 +94,7 @@ function move(ele_clicked) {
 // var display = 0;
 function hideShow(the_exit_box) {
 
-    const whole_window = the_exit_box.parentElement.parentElement;
+    const whole_window = the_exit_box.parentElement.parentElement.parentElement;
 
     if (whole_window.display == 1) {
         whole_window.style.display = 'block';
