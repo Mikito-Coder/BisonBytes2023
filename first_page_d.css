@@ -2,6 +2,13 @@ body {
   /* background-image: url("images/macos-monterey-stock-blue-light-layers-5k-2880x1800-5898.jpg"); */
   background-color: rgb(255, 205, 75);
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+
+  /* can't highlight anything */
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
 }
 .top_bar {
   height: 20px;
@@ -59,7 +66,7 @@ body {
 }
 
 .exit_box {
-    margin: 5%;
+  margin: 5%;
   width: 20px;
   height: 20px;
 
@@ -69,13 +76,11 @@ body {
   position: relative;
   outline: 2px solid;
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
-
-  
 }
-.exit_box h1{
-    width: 10;
+.exit_box h1 {
+  width: 10;
 }
 
-.top_logo img{
+.top_logo img {
   width: 5%;
 }
