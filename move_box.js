@@ -1,37 +1,92 @@
-function move() {
+function move(ele_clicked) {
+    console.log("yooo",ele_clicked)
+    // if (ele_clicke == "window_box" ){
+    //     console.log("yooo",)
+    // }
+
     var the_element;
-    const window = document.querySelectorAll(".window_box");
 
-    window.forEach(each_window => {
-        const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
+    const each_window = ele_clicked;
+    const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
+    window_mover.addEventListener("mousedown", () => {
 
-        window_mover.addEventListener("mousedown", () => {
+        each_window.style.position = "absolute"
+        the_element = each_window
 
-            each_window.style.position = "absolute"
-            the_element = each_window
-
-            document.onmousemove = (e) => {
+        document.onmousemove = (e) => {
 
 
-                const elementW = window_mover.offsetWidth;
-                const elementH = window_mover.offsetHeight;
+            const elementW = window_mover.offsetWidth;
+            const elementH = window_mover.offsetHeight;
 
-                const x = e.clientX - elementW / 2;
-                const y = e.clientY - elementH / 2;
+            const x = e.clientX - elementW / 2;
+            const y = e.clientY - elementH / 2;
 
+            if (the_element!=null){
                 the_element.style.position = 'absolute';
                 the_element.style.left = `${x}px`;
                 the_element.style.top = `${y}px`;
+                console.log(x,y)
 
-
-                cousole.log(the_element)
             }
-        })
-        document.onmouseup = function (e) {
-            the_element = null
+
+
+
         }
-    });
+    })
+    document.onmouseup = function (e) {
+        the_element = null
+    }
+    // window.forEach(each_window => {
+    //     const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
+
+        
+    // });
 }
+// function move(ele_clicked) {
+//     console.log("yooo",ele_clicked)
+//     if (ele_clicke == "window_box" ){
+//         console.log("yooo",)
+//     }
+
+//     var the_element;
+
+//     const window = document.querySelectorAll(".window_box");
+
+//     window.forEach(each_window => {
+//         const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
+
+//         window_mover.addEventListener("mousedown", () => {
+
+//             each_window.style.position = "absolute"
+//             the_element = each_window
+
+//             document.onmousemove = (e) => {
+
+
+//                 const elementW = window_mover.offsetWidth;
+//                 const elementH = window_mover.offsetHeight;
+
+//                 const x = e.clientX - elementW / 2;
+//                 const y = e.clientY - elementH / 2;
+
+//                 if (the_element!=null){
+//                     the_element.style.position = 'absolute';
+//                     the_element.style.left = `${x}px`;
+//                     the_element.style.top = `${y}px`;
+//                     console.log(x,y)
+
+//                 }
+
+
+
+//             }
+//         })
+//         document.onmouseup = function (e) {
+//             the_element = null
+//         }
+//     });
+// }
 
 
 
