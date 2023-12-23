@@ -1,5 +1,14 @@
+body{
+    background-image: url("images/macos-monterey-stock-blue-light-layers-5k-2880x1800-5898.jpg");
+}
+
 .large_window {
     width: 400px;
+    height: 500px;
+    position: relative;
+}
+.large_wide_window {
+    width: 600px;
     height: 500px;
     position: relative;
 }
@@ -18,8 +27,8 @@
 }
 
 .top_box {
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    height: 30px;
     background-color: rgb(220, 212, 191);
     position: absolute;
     display: flex;
@@ -27,17 +36,17 @@
 
 .top_click_box {
     width: 80%;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
+    height: 100%;
+    background-color: rgb(95, 95, 95);
     position: absolute;
     cursor: move;
 }
 
 .exit_box {
     width: 20%;
-    height: 50px;
+    height: 100%;
 
-    background-color: brown;
+    background-color: rgb(168, 168, 168);
     margin-left: auto;
     text-align: center;
     position: relative;
