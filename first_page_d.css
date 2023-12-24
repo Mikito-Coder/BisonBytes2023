@@ -1,7 +1,10 @@
 body {
-  /* background-image: url("images/macos-monterey-stock-blue-light-layers-5k-2880x1800-5898.jpg"); */
+  background-image: url("images/Screenshot 2023-12-23 at 6.58.44 PM.png");
+
   background-color: rgb(255, 205, 75);
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+overflow: hidden; 
+display:block;
 
   /* can't highlight anything */
   -ms-user-select: none;
@@ -36,6 +39,11 @@ body {
   position: relative;
 }
 
+.mid_tall_window {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
 .window_box {
   width: 100%;
   height: 100%;
