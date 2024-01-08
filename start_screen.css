@@ -1,0 +1,19 @@
+.start_page{
+    text-align: center;
+}
+.bison_title{
+    font-size: 80px;
+}
+.howard_title{
+    font-size: 50px;
+}
+.date_title{
+    font-size: 30px;
+}
+.start_page img{
+    height: 40%; 
+    width: auto;
+}
+/* .start_page_space{
+    height: 40%; 
+} */

@@ -2,7 +2,6 @@ body{
     /* overflow: hidden; */
     background-color:blue;
 }
-
 .sponsor_part{
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -30,12 +29,12 @@ body{
 }
 
 .TERA,.GIGA,.MEGA, .KILO {
-    width: 60%;
+    width: 10%;
     display: flex;
   align-items: center;
   justify-content: left;
   
-  margin: 8px;
+  margin: 30px;
 
 }
 .TERA{
@@ -51,27 +50,27 @@ body{
     height: 10px;
 }
 .TERA img{
-    height: 60px; 
+    height: 100px; 
     width: auto;
     margin: 20px;
 
 }
 
 .GIGA img{
-    height: 40px; 
+    height: 70px; 
     width: auto;
     margin: 20px;
 }
 
 .MEGA img{
-    height: 40px; 
+    height: 60px; 
     width: auto;
     margin: 20px;
 
 }
 
 .KILO img{
-    height: 20px; 
+    height: 50px; 
     width: auto;
     margin: 20px;
 

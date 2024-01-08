@@ -69,7 +69,9 @@ body {
 }
 
 .front {
-  background-color: FFCD4B;
+  background-color:rgb(215, 232, 184);
+  /* background-color: FFCD4B; */
+
   opacity: 80%;
   box-shadow: 5px 5px 5px rgb(86, 85, 80);
 }

@@ -12,6 +12,9 @@ display:block;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
+
+
+  
 }
 .top_bar {
   height: 20px;
@@ -30,7 +33,9 @@ display:block;
 .large_wide_window {
   width: 600px;
   height: 500px;
-  position: relative;
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
 }
 
 .mid_window {
@@ -39,10 +44,24 @@ display:block;
   position: relative;
 }
 
+.square_mid_window{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  
+  
+  top: 20%;
+  left: 30%;
+  /* transform: translate(-50%,-50%); */
+
+}
 .mid_tall_window {
-  width: 500px;
-  height: 500px;
-  position: relative;
+  width: 600px;
+  height: 800px;
+  position: absolute;
+  top: 20%;
+  right: 0%;
+
 }
 .window_box {
   width: 100%;
@@ -51,6 +70,8 @@ display:block;
   position: absolute;
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
   outline: 3px solid;
+  place-items: center;
+
 }
 
 .top_box {
