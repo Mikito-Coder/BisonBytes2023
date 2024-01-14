@@ -1,5 +1,20 @@
-.app_icon{
-    background-color: aqua;
+.app_icon {
+    background-color: rgba(214, 31, 31);
+    height: 90%;
+    width: 80%;
+    
+}
+
+.app_icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.app_clicked {
+    background-color: rgba(28, 28, 28, 0.2);
     height: 80px;
     width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

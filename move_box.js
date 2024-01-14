@@ -8,19 +8,21 @@ function move(ele_clicked) {
 
     const each_window = ele_clicked;
     const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
-    window_mover.addEventListener("mousedown", () => {
+    window_mover.addEventListener("mousedown", (ea) => {
 
         each_window.style.position = "absolute"
         the_element = each_window
 
-        document.onmousemove = (e) => {
+        document.onmousemove   = (e) => {
 
 
-            const elementW = window_mover.offsetWidth;
-            const elementH = window_mover.offsetHeight;
+            const elementW = window_mover.offsetLeft;
+            const elementH = window_mover.offsetTop;
 
-            const x = e.clientX - elementW / 2;
-            const y = e.clientY - elementH / 2;
+            ea.clientX
+            const x = elementW + e.clientX-ea.clientX ;
+            const y = elementH+ e.clientY- ea.clientY;
+            
 
             if (the_element!=null){
                 the_element.style.position = 'absolute';
@@ -30,6 +32,19 @@ function move(ele_clicked) {
 
             }
 
+            // const elementW = window_mover.offsetWidth;
+            // const elementH = window_mover.offsetHeight;
+
+            // const x = e.clientX - elementW / 2;
+            // const y = e.clientY - elementH / 2;
+
+            // if (the_element!=null){
+            //     the_element.style.position = 'absolute';
+            //     the_element.style.left = `${x}px`;
+            //     the_element.style.top = `${y}px`;
+            //     //console.log(x,y)
+
+            // }
 
 
         }
@@ -37,6 +52,7 @@ function move(ele_clicked) {
     document.onmouseup = function (e) {
         the_element = null
     }
+ 
     // window.forEach(each_window => {
     //     const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
 
