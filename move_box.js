@@ -13,6 +13,7 @@ function move(ele_clicked) {
         each_window.style.position = "absolute"
         the_element = each_window
 
+        // testing
         document.onmousemove   = (e) => {
 
 
