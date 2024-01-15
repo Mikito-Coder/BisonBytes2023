@@ -1,192 +1,178 @@
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="first_page_d.css" />
     <link rel="stylesheet" type="text/css" href="sponsors_d.css" />
     <link rel="stylesheet" type="text/css" href="tracks_d.css" />
     <link rel="stylesheet" type="text/css" href="start_screen.css" />
 
     <title>BisonBytes</title>
+  </head>
 
-
-</head>
-
-<body>
-    <a id="mlh-trust-badge"
-        style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
-        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
-        target="_blank"><img
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-            alt="Major League Hacking 2024 Hackathon Season" style="width:100%"></a>
+  <body>
+    <a
+      id="mlh-trust-badge"
+      style="
+        display: block;
+        max-width: 100px;
+        min-width: 60px;
+        position: fixed;
+        right: 50px;
+        top: 0;
+        width: 10%;
+        z-index: 10000;
+      "
+      href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+      target="_blank"
+      ><img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+        alt="Major League Hacking 2024 Hackathon Season"
+        style="width: 100%"
+    /></a>
     <div class="top_bar">
-        <div class="top_logo">
-            <img src="images/logos/BisonBytes-yellowCompMark-plain.png" alt="">
-
-        </div>
-        <span id="datetime"></span>
-
-
+      <div class="top_logo">
+        <img src="images/logos/BisonBytes-yellowCompMark-plain.png" alt="" />
+      </div>
+      <span id="datetime"></span>
     </div>
 
-
-    <div class="large_wide_window" onclick="move(this);">
+    <div id="all_windows">
+      <div class="large_wide_window" onclick="move(this);">
         <div class="window_box">
-            <div class="top_box">
-                <div class="top_click_box">
-                    <div class="exit_box" onclick="hideShow(this)">
-                        <h1>X</h1>
-
-                    </div>
-                </div>
-
+          <div class="top_box">
+            <div class="top_click_box">
+              <div class="exit_box" onclick="hideShow(this)">
+                <h1>X</h1>
+              </div>
             </div>
+          </div>
 
-            <div class="tracks_part">
-                <div class="track_titel">
-                    <h1>Tracks</h1>
-                </div>
-                <div class="tracks_items">
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">Artificial intelligence/ Machine Learning</h1>
-                        </div>
-                        <div class="back">
-                            <img src="images/BisonBytes-blueCompMark-plain.png">
-                        </div>
-                    </div>
-
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">Health</h1>
-                        </div>
-                        <div class="back">
-                            <img src="images/sponsors/Palantir_logo.jpg">
-                        </div>
-                    </div>
-
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">Education</h1>
-                        </div>
-                        <div class="back">
-                            <img src="images/BisonBytes-blueCompMark-plain.png">
-                        </div>
-                    </div>
-
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">Gaming</h1>
-                        </div>
-                        <div class="back">
-                            <img src="images/BisonBytes-blueCompMark-plain.png">
-                        </div>
-                    </div>
-
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">FINTECH</h1>
-                        </div>
-                        <div class="back">
-                            <img src="images/BisonBytes-blueCompMark-plain.png">
-                        </div>
-                    </div>
-
-                    <div class="track_card">
-                        <div class="front">
-                            <h1 class="track_text">Non Related</h1>
-                        </div>
-                        <div class="back">
-                            <h4 class="track_text">No sponsor😄<br>If your project does not fall under a track you can
-                                submit in this track</h4>
-                        </div>
-                    </div>
-                </div>
+          <div class="tracks_part">
+            <div class="track_titel">
+              <h1>Tracks</h1>
             </div>
+            <div class="tracks_items">
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">
+                    Artificial intelligence/ Machine Learning
+                  </h1>
+                </div>
+                <div class="back">
+                  <img src="images/BisonBytes-blueCompMark-plain.png" />
+                </div>
+              </div>
+
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">Health</h1>
+                </div>
+                <div class="back">
+                  <img src="images/sponsors/Palantir_logo.jpg" />
+                </div>
+              </div>
+
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">Education</h1>
+                </div>
+                <div class="back">
+                  <img src="images/BisonBytes-blueCompMark-plain.png" />
+                </div>
+              </div>
+
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">Gaming</h1>
+                </div>
+                <div class="back">
+                  <img src="images/BisonBytes-blueCompMark-plain.png" />
+                </div>
+              </div>
+
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">FINTECH</h1>
+                </div>
+                <div class="back">
+                  <img src="images/BisonBytes-blueCompMark-plain.png" />
+                </div>
+              </div>
+
+              <div class="track_card">
+                <div class="front">
+                  <h1 class="track_text">Non Related</h1>
+                </div>
+                <div class="back">
+                  <h4 class="track_text">
+                    No sponsor😄<br />If your project does not fall under a
+                    track you can submit in this track
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </div>
-    <div class="mid_tall_window" onclick="move(this)">
+      </div>
+      <div class="mid_tall_window" onclick="move(this)">
         <div class="window_box">
-            <div class="top_box">
-                <div class="top_click_box">
-                    <div class="exit_box" onclick="hideShow(this)">
-                        <h1>X</h1>
-
-                    </div>
-                </div>
-
+          <div class="top_box">
+            <div class="top_click_box">
+              <div class="exit_box" onclick="hideShow(this)">
+                <h1>X</h1>
+              </div>
             </div>
-            <div class="sponsor_part">
-                <div class="sponsor_head">
-                    <h1>
-                        Sponsors
-                    </h1>
-                </div>
-                <div class="sponsor_row">
-
-                    <div class="TERA">
-                        <h1>TERA</h1>
-                        <img src="images/sponsors/Palantir_black.png" />
-                    </div>
-                </div>
-                <br class="line_sponsors">
-                <div class="sponsor_row">
-
-                    <div class="GIGA">
-                        <h1>GIGA</h1>
-                        <img src="images/sponsors/Electronic-Arts-Logo.svg.png" />
-
-                        <img src="images/sponsors/Dow_Chemical_Company_logo.svg.png" />
-                    </div>
-                </div>
-                <br class="line_sponsors">
-
-                <div class="sponsor_row">
-
-                    <div class="MEGA">
-                        <h1>MEGA</h1>
-                        <img src="images/sponsors/Google-logo.png" />
-                    </div>
-
-                </div>
-                <br class="line_sponsors">
-                <div class="sponsor_row">
-
-
-                    <div class="KILO">
-                        <h1>KILO</h1>
-                        <img src="images/sponsors/mathworks_logo.png" />
-                    </div>
-
-                </div>
+          </div>
+          <div class="sponsor_part">
+            <div class="sponsor_head">
+              <h1>Sponsors</h1>
             </div>
+            <div class="sponsor_row">
+              <div class="TERA">
+                <h1>TERA</h1>
+                <img src="images/sponsors/Palantir_black.png" />
+              </div>
+            </div>
+            <br class="line_sponsors" />
+            <div class="sponsor_row">
+              <div class="GIGA">
+                <h1>GIGA</h1>
+                <img src="images/sponsors/Electronic-Arts-Logo.svg.png" />
 
+                <img src="images/sponsors/Dow_Chemical_Company_logo.svg.png" />
+              </div>
+            </div>
+            <br class="line_sponsors" />
 
-
-
+            <div class="sponsor_row">
+              <div class="MEGA">
+                <h1>MEGA</h1>
+                <img src="images/sponsors/Google-logo.png" />
+              </div>
+            </div>
+            <br class="line_sponsors" />
+            <div class="sponsor_row">
+              <div class="KILO">
+                <h1>KILO</h1>
+                <img src="images/sponsors/mathworks_logo.png" />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="square_mid_window" onclick="move(this);">
+      </div>
+      <div class="square_mid_window" onclick="move(this);">
         <div class="window_box">
-            <div class="top_box">
-                <div class="top_click_box">
-
-                </div>
-                <div class="exit_box" onclick="hideShow(this)">
-                    <h1>X</h1>
-
-                </div>
+          <div class="top_box">
+            <div class="top_click_box"></div>
+            <div class="exit_box" onclick="hideShow(this)">
+              <h1>X</h1>
             </div>
-            <div class="start_page">
-
-                <h1 class="bison_title">BisonBytes</h1>
-                <h1 class="howard_title">Howard Univeristy</h1>
-                <h1 class="date_title">March 2024</h1>
-                <img src="images/logos/BisonBytes-blueCompMark-plain.png" />
-
-
-            </div>
-
+          </div>
+          <div class="start_page">
+            <h1 class="bison_title">BisonBytes</h1>
+            <h1 class="howard_title">Howard Univeristy</h1>
+            <h1 class="date_title">March 2024</h1>
+            <img src="images/logos/BisonBytes-blueCompMark-plain.png" />
+          </div>
         </div>
         <!-- <div class="mid_window" onclick="move(this)">
             <div class="window_box">
@@ -203,18 +189,10 @@
             </div>
     
         </div> -->
-
+      </div>
     </div>
 
-
-
-        
-
     <script src="move_box.js"></script>
-    <script src="main_page_f.js">
-
-    </script>
-
-</body>
-
+    <script src="main_page_f.js"></script>
+  </body>
 </html>
