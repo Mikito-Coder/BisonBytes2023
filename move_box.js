@@ -26,19 +26,18 @@ function move(ele_clicked) {
 
     windows.forEach(each_window => {
         const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
-
         window_mover.addEventListener("mousedown", () => {
 
-            each_window.style.position = "absolute"
+            each_window.parentNode.style.position = "absolute"
             the_element = each_window
 
             document.onmousemove = (e) => {
                 if (the_element!=null){
                     const mouseX = e.movementX;
                     const mouseY = e.movementY;
-                    each_window.style.left = each_window.offsetLeft + mouseX + 'px';
-                    each_window.style.top = each_window.offsetTop + mouseY + 'px';
-                    console.log(mouseX,mouseY, each_window.style.left, each_window.style.top)
+                    each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
+                    each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+                    console.log(mouseX,mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
                  
                 }
 
