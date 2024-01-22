@@ -70,6 +70,8 @@ display:block;
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
   outline: 3px solid;
   place-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
 
 }
 
@@ -84,10 +86,11 @@ display:block;
 .top_click_box {
   width: 100%;
   height: 100%;
-  background-color: rgb(130, 128, 190);
+  background-color: rgb(130, 128, 190); 
   position: absolute;
   cursor: move;
   display: flex;
+  
   align-items: center;
   justify-content: right;
   outline: 3px solid;
@@ -106,6 +109,8 @@ display:block;
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
 }
 .exit_box h1 {
+  height: 100%;
+
   width: 10;
 }
 
