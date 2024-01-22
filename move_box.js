@@ -2,7 +2,7 @@
 // var display = 0;
 function hideShow(the_exit_box) {
 
-    const whole_window = the_exit_box.parentElement.parentElement.parentElement;
+    const whole_window = the_exit_box.parentElement.parentElement.parentElement.parentElement;
 
     if (whole_window.display == 1) {
         whole_window.style.display = 'block';
@@ -15,10 +15,8 @@ function hideShow(the_exit_box) {
 
 
 function move(ele_clicked) {
-    console.log("yooo",ele_clicked)
-    if (ele_clicked == "window_box" ){
-        console.log("yooo",)
-    }
+
+
 
     var the_element;
 
@@ -28,26 +26,39 @@ function move(ele_clicked) {
         const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
         window_mover.addEventListener("mousedown", () => {
 
-            each_window.parentNode.style.position = "absolute"
-            the_element = each_window
+            // each_window.parentNode.style.position = "absolute"
 
             document.onmousemove = (e) => {
-                if (the_element!=null){
-                    const mouseX = e.movementX;
-                    const mouseY = e.movementY;
-                    each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
-                    each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
-                    console.log(mouseX,mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
-                 
+                //const = each_window.parentNode.style.left
+                
+                //const has_to_be = true;
+                if (each_window!=null ){
+
+                    var has_to_be = parseInt(each_window.parentNode.style.left.substring(0,each_window.parentNode.style.length));
+                    var filler = has_to_be>0;
+                    console.log("has ",typeof has_to_be, has_to_be, filler)
+                    if(true){// idk why this isn;rt workinh
+                        const mouseX = e.movementX;
+                        const mouseY = e.movementY;
+                        each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
+                        each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+                        console.log(mouseX,mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
+                        console.log(parseInt(each_window.parentNode.style.left.substring(0,each_window.parentNode.style.length)))
+    
+                    }
+                   
                 }
 
 
 
             }
+
+            document.onmouseup = function (e) {
+                each_window = null
+                console.log("STOPPPP")
+            }
         })
 
-        document.onmouseup = function (e) {
-            the_element = null
-        }
+        
     });
 }

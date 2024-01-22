@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="sponsors_d.css" />
     <link rel="stylesheet" type="text/css" href="tracks_d.css" />
     <link rel="stylesheet" type="text/css" href="start_screen.css" />
+    <link rel="stylesheet" type="text/css" href="apps.css" />
 
     <title>BisonBytes</title>
   </head>
@@ -28,13 +29,20 @@
         alt="Major League Hacking 2024 Hackathon Season"
         style="width: 100%"
     /></a>
-    <div class="top_bar">
+    <!-- <div class="top_bar">
       <div class="top_logo">
         <img src="images/logos/BisonBytes-yellowCompMark-plain.png" alt="" />
       </div>
       <span id="datetime"></span>
+    </div> -->
+    <div class="app_clicked">
+      <button onclick="open_window(this)" id="start_widow">
+        <div class="app_icon">
+          <img src="images/logos/Bison Bytes header-yellowBackground.png" />
+        </div>
+      </button>
     </div>
-
+    <script src="app_clicks.js"></script>
     <div id="all_windows">
       <div class="large_wide_window" onclick="move(this);">
         <div class="window_box">
@@ -129,7 +137,9 @@
             <div class="sponsor_row">
               <div class="TERA">
                 <h1>TERA</h1>
-                <a href="https://www.palantir.com/careers/students/scholarship/future/">
+                <a
+                  href="https://www.palantir.com/careers/students/scholarship/future/"
+                >
                   <img src="images/sponsors/Palantir_black.png" />
                 </a>
               </div>
@@ -139,9 +149,16 @@
               <div class="GIGA">
                 <h1>GIGA</h1>
                 <a href="https://www.ea.com">
-                  <img src="images/sponsors/Electronic-Arts-Logo.svg.png" alt="Electronic Arts Logo"/> </a>
+                  <img
+                    src="images/sponsors/Electronic-Arts-Logo.svg.png"
+                    alt="Electronic Arts Logo"
+                  />
+                </a>
                 <a href="https://www.dow.com/en-us">
-                  <img src="images/sponsors/Dow_Chemical_Company_logo.svg.png" />  </a>
+                  <img
+                    src="images/sponsors/Dow_Chemical_Company_logo.svg.png"
+                  />
+                </a>
               </div>
             </div>
             <br class="line_sponsors" />
@@ -166,12 +183,11 @@
           </div>
         </div>
       </div>
-      <div class="square_mid_window" onclick="move(this);">
+      <div class="square_mid_window" onclick="move(this);" id="title page">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)">
-              </div>
+              <div class="exit_box" onclick="hideShow(this)"></div>
             </div>
           </div>
           <div class="start_page">
@@ -181,25 +197,29 @@
             <img src="images/logos/BisonBytes-blueCompMark-plain.png" />
           </div>
         </div>
-        <!-- <div class="mid_window" onclick="move(this)">
-            <div class="window_box">
-                <div class = "top_box">
-                    <div class = "top_click_box">
-                        <div class="exit_box" onclick="hideShow(this)">
-                            <h1>X</h1>
-                    
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-    
-        </div> -->
       </div>
+
+
     </div>
 
     <script src="move_box.js"></script>
     <script src="main_page_f.js"></script>
+
+    <script>
+
+      function open_window(ele_clicked) {
+        
+        if (document.getElementById("title page").style.display=="none") {
+          console.log("niwuefhuiwehfuiehfw")
+          document.getElementById("title page").style.display ='block'
+
+          document.getElementById("title page").style.left = "50%";
+        document.getElementById("title page").style.right = "50%";
+        
+      }
+    }
+      
+    </script>
+
   </body>
 </html>
