@@ -16,15 +16,28 @@ function hideShow(the_exit_box) {
 
 function move(ele_clicked) {
 
-
+    console.log(document.getElementById("all_windows").childNodes)
 
     var the_element;
 
     const windows = document.querySelectorAll(".window_box");
+    // console.log("ufihu3rhuif3f",windows)
+
+    windows.forEach(other_window => {
+        console.log("parenttt ",other_window.parentNode)
+        other_window.parentNode.style.zIndex = "1";
+        // console.log("ummmmmmmmmmemefmefer",other_window.className,other_window.style.zIndex);
+    });
+    ele_clicked.style.zIndex = "10";
+
+
+
 
     windows.forEach(each_window => {
         const window_mover = each_window.getElementsByClassName("top_box")[0].getElementsByClassName("top_click_box")[0]
         window_mover.addEventListener("mousedown", () => {
+            
+
 
             // each_window.parentNode.style.position = "absolute"
 
@@ -33,6 +46,7 @@ function move(ele_clicked) {
                 
                 //const has_to_be = true;
                 if (each_window!=null ){
+                    
 
                     var has_to_be = parseInt(each_window.parentNode.style.left.substring(0,each_window.parentNode.style.length));
                     var filler = has_to_be>0;

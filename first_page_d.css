@@ -27,20 +27,22 @@ display:block;
 .large_window {
   width: 400px;
   height: 500px;
-  position: relative;
+  position: absolute;
 }
-.large_wide_window {
+.tracks_and_sponsors_window {
   width: 600px;
-  height: 500px;
+  height: 550px;
   bottom: 0%;
   left: 0%;
   position: absolute;
+  z-index :1;
+  
 }
 
 .mid_window {
   width: 400px;
   height: 300px;
-  position: relative;
+  position: absolute;
 }
 
 .square_mid_window{

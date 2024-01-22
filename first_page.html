@@ -35,16 +35,36 @@
       </div>
       <span id="datetime"></span>
     </div> -->
-    <div class="app_clicked">
-      <button onclick="open_window(this)" id="start_widow">
-        <div class="app_icon">
-          <img src="images/logos/Bison Bytes header-yellowBackground.png" />
-        </div>
-      </button>
+
+    <div class= "all_app_buttons">
+      <div class="app_clicked">
+        <button onclick="open_window(this)" id="open_start_widow">
+          <div class="app_icon">
+            <img src="images/logos/Bison Bytes header-yellowBackground.png" />
+          </div>
+        </button>
+      </div>
+      <div class="app_clicked">
+        <button onclick="open_window(this)" id="open_tracks_part">
+          <div class="app_icon">
+            <!-- <img src="images/logos/Bison Bytes header-yellowBackground.png" /> -->
+          
+          </div>
+        </button>
+      </div>
+      <div class="app_clicked">
+        <button onclick="open_window(this)" id="open_sponsors_part">
+          <div class="app_icon">
+            <!-- <img src="images/logos/Bison Bytes header-yellowBackground.png" /> -->
+          
+          </div>
+        </button>
+      </div>
     </div>
+    
     <script src="app_clicks.js"></script>
     <div id="all_windows">
-      <div class="large_wide_window" onclick="move(this);">
+      <div class="tracks_and_sponsors_window" onclick="move(this)"; id="window_tracks_and_sponsors">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
@@ -121,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="mid_tall_window" onclick="move(this)">
+      <div class="mid_tall_window" onclick="move(this)" id="window_sponsors_only">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
@@ -208,15 +228,30 @@
     <script>
 
       function open_window(ele_clicked) {
-        
-        if (document.getElementById("title page").style.display=="none") {
-          console.log("niwuefhuiwehfuiehfw")
-          document.getElementById("title page").style.display ='block'
+        var window_2_be_opened = NaN;
+        var button_id =ele_clicked.id
+        console.log(ele_clicked.id)
+        if (button_id =="open_start_widow"){
+          window_2_be_opened= document.getElementById("title page")
+        }
+        else if(button_id =="open_tracks_part") {
+          window_2_be_opened= document.getElementById("window_tracks_and_sponsors")
 
-          document.getElementById("title page").style.left = "50%";
-        document.getElementById("title page").style.right = "50%";
+        }
+        else if(button_id =="open_sponsors_part") {
+          window_2_be_opened= document.getElementById("window_sponsors_only")
+
+        }
+
+          
+        if (window_2_be_opened.style.display=="none"){
+          console.log("niwuefhuiwehfuiehfw")
+          window_2_be_opened.style.display ='block'
+
+          window_2_be_opened.style.left = "50%";
+          window_2_be_opened.style.right = "50%";
         
-      }
+        }
     }
       
     </script>
