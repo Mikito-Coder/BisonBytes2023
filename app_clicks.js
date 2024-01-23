@@ -1,64 +1,42 @@
-// function open_window(ele_clicked) {
-//   document.getElementById("all_windows")
-//       .innerHTML +=
-//       `<div class="square_mid_window" onclick="move(this);">
-//       <div class="window_box">
-//         <div class="top_box">
-//           <div class="top_click_box">
-//             <div class="exit_box" onclick="hideShow(this)"></div>
-//           </div>
-//         </div>
-//         <div class="start_page">
-//           <h1 class="bison_title">BisonBytes</h1>
-//           <h1 class="howard_title">Howard Univeristy</h1>
-//           <h1 class="date_title">March 2024</h1>
-//           <img src="images/logos/BisonBytes-blueCompMark-plain.png" />
-//         </div>
-//       </div>
-//     </div>`      ;
-// }
+function open_window(ele_clicked) {
+    var window_2_be_opened = NaN;
+    var button_id = ele_clicked.id
+    //console.log(ele_clicked.id)
+    if (button_id == "open_start_widow") {
+        window_2_be_opened = document.getElementById("title page")
+    }
+    else if (button_id == "open_tracks_part") {
+        window_2_be_opened = document.getElementById("window_tracks_and_sponsors")
+        console.log("blahbalah",window_2_be_opened.style.display)
+
+    }
+    else if (button_id == "open_sponsors_part") {
+        window_2_be_opened = document.getElementById("window_sponsors_only")
+
+    }
 
 
+    if (window_2_be_opened.style.display != "block") {
 
-// function open_window(ele_clicked) {
-//   const button = ele_clicked;
-//   const button_type = button.getElementsByClassName("app_icon")[0];
-//   // const names = button_type.getElementById()
-//   const the_id = ele_clicked.id;
-//   if (the_id == "start_widow") {
+        window_2_be_opened.style.display = 'block'
+        console.log(document.documentElement.clientWidth)
+        var whereX = Math.floor(Math.random() * (30))+10;
+        var whereY = Math.floor(Math.random() * (40));
 
-//     document.getElementById('all_windows').insertAdjacentHTML(
-//         'afterbegin',
-//         `<div class="square_mid_window" onclick="move(this);">
-//         <div class="window_box">
-//             <div class="top_box">
-//                 <div class="top_click_box">
-
-//                 </div>
-//                 <div class="exit_box" onclick="hideShow(this)">
-//                     <h1>X</h1>
-
-//                 </div>
-//             </div>
-//             <div class="start_page">
-
-//                 <h1 class="bison_title">BisonBytes</h1>
-//                 <h1 class="howard_title">Howard Univeristy</h1>
-//                 <h1 class="date_title">March 2024</h1>
-//                 <img src="images/logos/BisonBytes-blueCompMark-plain.png" />
+        window_2_be_opened.style.top = whereX+"%";
+        window_2_be_opened.style.left = whereY+"%";
+        console.log("niwuefhuiwehfuiehfw",whereX, whereY, window_2_be_opened.style.top,window_2_be_opened.style.left )
 
 
-//             </div>
+    }
+}
 
-//         </div>
+function app_back_color(ele_clicked){
+    // console.log("color change")
 
-//     </div>
-//     </div>`      
-//       )
+    ele_clicked.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
     
-//         console.log("ummmm")
-//   }
-//   console.log("done")
-
-// document.appendChild(div);
-// }
+    document.onmousedown = function (e) {
+        ele_clicked.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    }
+}

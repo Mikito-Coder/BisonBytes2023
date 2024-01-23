@@ -37,16 +37,16 @@
     </div> 
 
     <div class= "all_app_buttons">
-      <div class="app_clicked">
-        <input type="image" class="" src="images/pink_folder.png" onclick="open_window(this)" id="open_start_widow" />
+      <div class="app_clicked" onclick="app_back_color(this)">
+        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_start_widow" />
         <h4>BisonBytes</h4>
       </div>
-      <div class="app_clicked">
-        <input type="image" class="" src="images/pink_folder.png" onclick="open_window(this)" id="open_tracks_part" />
+      <div class="app_clicked" onclick="app_back_color(this)">
+        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_tracks_part" />
         <h4>Tracks</h4>
       </div>
-      <div class="app_clicked">
-        <input type="image" class="" src="images/pink_folder.png" onclick="open_window(this)" id="open_sponsors_part" />
+      <div class="app_clicked" onclick="app_back_color(this)">
+        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_sponsors_part" />
         <h4>Sponsors</h4>
       </div>
     </div>
@@ -129,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="mid_tall_window" onclick="move(this)" id="window_sponsors_only">
+      <div class="only_sponsors_window" onclick="move(this)" id="window_sponsors_only">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
@@ -190,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="square_mid_window" onclick="move(this);" id="title page">
+      <div class="tile_window" onclick="move(this);" id="title page">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
@@ -212,37 +212,7 @@
     <script src="move_box.js"></script>
     <script src="main_page_f.js"></script>
 
-    <script>
 
-      function open_window(ele_clicked) {
-        var window_2_be_opened = NaN;
-        var button_id =ele_clicked.id
-        console.log(ele_clicked.id)
-        if (button_id =="open_start_widow"){
-          window_2_be_opened= document.getElementById("title page")
-        }
-        else if(button_id =="open_tracks_part") {
-          window_2_be_opened= document.getElementById("window_tracks_and_sponsors")
-
-        }
-        else if(button_id =="open_sponsors_part") {
-          window_2_be_opened= document.getElementById("window_sponsors_only")
-
-        }
-
-          
-        if (window_2_be_opened.style.display=="none"){
-          console.log("niwuefhuiwehfuiehfw")
-          window_2_be_opened.style.display ='block'
-
-          window_2_be_opened.style.top = "20%";
-          window_2_be_opened.style.left = "30%";
-        
-
-        }
-    }
-      
-    </script>
 
   </body>
 </html>

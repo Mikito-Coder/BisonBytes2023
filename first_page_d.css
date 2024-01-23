@@ -1,8 +1,9 @@
 body {
 height: 100%;
 width: 100%;
-  background-color: #00305b !important;
-
+  /* background-color: #00305b !important; */
+background-image: url("images/maybe_background.jpg");
+background-size: cover;
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
 overflow: hidden; 
 display:block;
@@ -13,12 +14,13 @@ display:block;
  -khtml-user-select: none;
  -webkit-user-select: none;
  
+ margin:0px;
 
   
 }
 
 .top_bar {
-  height: 40px;
+  height: 50px;
   width: 100%;
   background-color: rgb(24, 17, 17);
   position: absolute;
@@ -34,11 +36,13 @@ display:block;
   position: absolute;
 }
 .tracks_and_sponsors_window {
-  width: 600px;
-  height: 550px;
+  width: 500px;
+  height: 450px;
   bottom: 0%;
   left: 0%;
   position: absolute;
+  display:none;
+
   
   
 }
@@ -49,23 +53,24 @@ display:block;
   position: absolute;
 }
 
-.square_mid_window{
-  width: 600px;
-  height: 600px;
+.tile_window{
+  width: 500px;
+  height: 500px;
   position: absolute;
   
   
   top: 20%;
   left: 30%;
-  /* transform: translate(-50%,-50%); */
+  
 
 }
-.mid_tall_window {
-  width: 600px;
-  height: 800px;
+.only_sponsors_window {
+  width: 500px;
+  height: 700px;
   position: absolute;
   top: 20%;
   right: 0%;
+  display:none;
 
 }
 .window_box {
@@ -83,7 +88,7 @@ display:block;
 
 .top_box {
   width: 100%;
-  height: 50px;
+  height: 40px;
   background-color: rgb(174, 198, 207);
   position: absolute;
   display: flex;
@@ -92,7 +97,7 @@ display:block;
 .top_click_box {
   width: 100%;
   height: 100%;
-  background-color: rgb(222, 213, 87); 
+  background-color: #00305b; 
   position: absolute;
   cursor: move;
   display: flex;
@@ -107,8 +112,8 @@ display:block;
 
 .exit_box {
   margin: 5%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 
   background-color: rgb(255, 255, 255);
   margin-left: auto;

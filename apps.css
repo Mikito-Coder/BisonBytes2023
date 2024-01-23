@@ -1,5 +1,4 @@
 .app_icon {
-    background-color: rgba(214, 31, 31);
     height: 90%;
     width: 80%;
     
@@ -11,15 +10,20 @@
 }
 
 .app_clicked {
-    height: 80px;
-    width: 60px;
+    height: 20px;
+    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px;
+
+    border-radius: 1rem;
 
 }
+
 
 .app_clicked input{
     height: 80px;
@@ -32,9 +36,9 @@
 
 .all_app_buttons{
 
-    color: rgb(196, 123, 123);
+    color: rgba(251, 255, 3, 0.934);
     text-align: center;
-  
+
     margin: 20px;
     position: absolute;
     backface-visibility: hidden;
@@ -43,12 +47,11 @@
     align-items:end;
     justify-content: center;
     flex-direction: column;
-    padding-top: 20px;
 
 
     position: absolute;
 right: 10px;
-top: 300px
+top: 200px
   }
   
   
