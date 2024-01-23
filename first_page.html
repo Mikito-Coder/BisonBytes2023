@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="tracks_d.css" />
     <link rel="stylesheet" type="text/css" href="start_screen.css" />
     <link rel="stylesheet" type="text/css" href="apps.css" />
+    <link href="https://fonts.cdnfonts.com/css/petyka-retro-computer" rel="stylesheet">
 
     <title>BisonBytes</title>
   </head>
@@ -30,39 +31,66 @@
         style="width: 100%"
     /></a>
     <div class="top_bar">
+      <h4 class="top_bar_name">
+        BisonBytes
+      </h4>
       <div class="top_logo">
-        <img src="images/logos/BisonBytes-yellowCompMark-plain.png" alt="" />
       </div>
       <span id="datetime"></span>
-    </div> 
+    </div>
 
-    <div class= "all_app_buttons">
+    <div class="all_app_buttons">
       <div class="app_clicked" onclick="app_back_color(this)">
-        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_start_widow" />
+        <input
+          type="image"
+          class=""
+          src="images/yellow_folder.png"
+          onclick="open_window(this)"
+          id="open_start_widow"
+        />
         <h4>BisonBytes</h4>
       </div>
       <div class="app_clicked" onclick="app_back_color(this)">
-        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_tracks_part" />
+        <input
+          type="image"
+          class=""
+          src="images/yellow_folder.png"
+          onclick="open_window(this)"
+          id="open_tracks_part"
+        />
         <h4>Tracks</h4>
       </div>
       <div class="app_clicked" onclick="app_back_color(this)">
-        <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_sponsors_part" />
+        <input
+          type="image"
+          class=""
+          src="images/yellow_folder.png"
+          onclick="open_window(this)"
+          id="open_sponsors_part"
+        />
         <h4>Sponsors</h4>
       </div>
     </div>
-    
+
     <script src="app_clicks.js"></script>
     <div id="all_windows">
-      <div class="tracks_and_sponsors_window" onclick="move(this)"; id="window_tracks_and_sponsors">
+      <div
+        class="tracks_and_sponsors_window"
+        onclick="move(this)"
+        ;
+        id="window_tracks_and_sponsors"
+      >
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
               <div class="exit_box" onclick="hideShow(this)">
+                X
               </div>
             </div>
           </div>
 
           <div class="tracks_part">
+            <div class="window_page_extra_space"></div>
             <div class="track_titel">
               <h1>Tracks</h1>
             </div>
@@ -101,7 +129,7 @@
                   <h1 class="track_text">Gaming</h1>
                 </div>
                 <div class="back">
-                  <img src="images/BisonBytes-blueCompMark-plain.png" />
+                  <img src="images/sponsors/Electronic-Arts-Logo.svg.png" />
                 </div>
               </div>
 
@@ -129,43 +157,53 @@
           </div>
         </div>
       </div>
-      <div class="only_sponsors_window" onclick="move(this)" id="window_sponsors_only">
+      <div
+        class="only_sponsors_window"
+        onclick="move(this)"
+        id="window_sponsors_only"
+      >
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
               <div class="exit_box" onclick="hideShow(this)">
+                X
               </div>
             </div>
           </div>
           <div class="sponsor_part">
+            <div class="window_page_extra_space"></div>
             <div class="sponsor_head">
               <h1>Sponsors</h1>
             </div>
             <div class="sponsor_row">
               <div class="TERA">
                 <h1>TERA</h1>
-                <a
-                  href="https://www.palantir.com/careers/students/scholarship/future/"
-                >
-                  <img src="images/sponsors/Palantir_black.png" />
-                </a>
+                <div class="teir_images">
+                  <a
+                    href="https://www.palantir.com/careers/students/scholarship/future/"
+                  >
+                    <img src="images/sponsors/Palantir_black.png" />
+                  </a>
+                </div>
               </div>
             </div>
             <br class="line_sponsors" />
             <div class="sponsor_row">
               <div class="GIGA">
                 <h1>GIGA</h1>
-                <a href="https://www.ea.com">
-                  <img
-                    src="images/sponsors/Electronic-Arts-Logo.svg.png"
-                    alt="Electronic Arts Logo"
-                  />
-                </a>
-                <a href="https://www.dow.com/en-us">
-                  <img
-                    src="images/sponsors/Dow_Chemical_Company_logo.svg.png"
-                  />
-                </a>
+                <div class="teir_images">
+                  <a href="https://www.ea.com">
+                    <img
+                      src="images/sponsors/Electronic-Arts-Logo.svg.png"
+                      alt="Electronic Arts Logo"
+                    />
+                  </a>
+                  <a href="https://www.dow.com/en-us">
+                    <img
+                      src="images/sponsors/Dow_Chemical_Company_logo.svg.png"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <br class="line_sponsors" />
@@ -173,18 +211,22 @@
             <div class="sponsor_row">
               <div class="MEGA">
                 <h1>MEGA</h1>
-                <a href="https://www.google.com/about/careers/applications/">
-                  <img src="images/sponsors/Google-logo.png" />
-                </a>
+                <div class="teir_images">
+                  <a href="https://www.google.com/about/careers/applications/">
+                    <img src="images/sponsors/Google-logo.png" />
+                  </a>
+                </div>
               </div>
             </div>
             <br class="line_sponsors" />
             <div class="sponsor_row">
               <div class="KILO">
                 <h1>KILO</h1>
-                <a href=" https://www.mathworks.com">
-                  <img src="images/sponsors/mathworks_logo.png" />
-                </a>
+                <div class="teir_images">
+                  <a href=" https://www.mathworks.com">
+                    <img src="images/sponsors/mathworks_logo.png" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -194,10 +236,11 @@
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)"></div>
+              <div class="exit_box" onclick="hideShow(this)">X</div>
             </div>
           </div>
           <div class="start_page">
+            <div class="window_page_extra_space"></div>
             <h1 class="bison_title">BisonBytes</h1>
             <h1 class="howard_title">Howard Univeristy</h1>
             <h1 class="date_title">March 2024</h1>
@@ -205,14 +248,9 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
     <script src="move_box.js"></script>
     <script src="main_page_f.js"></script>
-
-
-
   </body>
 </html>
