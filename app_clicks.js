@@ -14,9 +14,12 @@ function open_window(ele_clicked) {
         window_2_be_opened = document.getElementById("window_sponsors_only")
 
     }
+    else{
+        console.log("doesn't exits",window_2_be_opened,window_2_be_opened.toString()=="NaN",window_2_be_opened.toString())
+    }
 
 
-    if (window_2_be_opened.style.display != "block") {
+    if (window_2_be_opened.toString()!="NaN" && window_2_be_opened.style.display != "block") {
 
         window_2_be_opened.style.display = 'block'
         console.log(document.documentElement.clientWidth)
@@ -39,4 +42,13 @@ function app_back_color(ele_clicked){
     document.onmousedown = function (e) {
         ele_clicked.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     }
+}
+
+function remove_all_window(ele_clicked){
+    const windows = document.querySelectorAll(".window_box");
+    // console.log("ufihu3rhuif3f",windows)
+
+    windows.forEach(other_window => {
+        other_window.parentNode.style.display = 'none'
+    });
 }
