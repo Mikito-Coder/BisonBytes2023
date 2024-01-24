@@ -152,11 +152,15 @@ display:block;
 }
 .registration_page{
   text-align: center;
-    
+  color: #ffffff;
   flex-direction: column;
+  background-image: url('images/reg_back1.jpg.avif');
+
 }
 
 .registration_page iframe{
   width:100%;
-  height: 100%;
+  height: 80%;
+  background-color: blue;
+  background-image: url('images/reg_back1.jpg.avif');
 }
