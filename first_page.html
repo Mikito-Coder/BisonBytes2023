@@ -74,6 +74,16 @@
         <input
           type="image"
           class=""
+          src="images/yellow_folder.png"
+          onclick="open_window(this)"
+          id="open_registration_part"
+        />
+        <h4>registration</h4>
+      </div>
+      <div class="app_clicked" onclick="app_back_color(this)">
+        <input
+          type="image"
+          class=""
           src="images/questions_folder.gif"
           onclick="open_window(this)"
           id="open_questions_screen"
@@ -269,6 +279,23 @@
         </div>
       </div>
     </div>
+
+    <div class="registration_window" onclick="move(this);" id="window_registration">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <div class="exit_box" onclick="hideShow(this)">X</div>
+          </div>
+        </div>
+        <div class="registration_page">
+          <div class="window_page_extra_space"></div>
+          <h1 class="">BisonBytes 2024 Registration</h1>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZxAiOkcmi20aqX5-eLgi4P9mT6ChCf4GyCgT-3-hE29qtJw/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div class="window_page_extra_space"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="move_box.js"></script>
     <script src="main_page_f.js"></script>

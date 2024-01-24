@@ -15,6 +15,7 @@
     padding: 10px;
     text-align: center;
   }
+  
 .sponsor_row{
     height: 80px;
     margin: 10px;
@@ -26,6 +27,23 @@
 
 }
 
+.sponsor_row,.sponsor_head { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+
+}
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }
+}
+
+.sponsor_head:hover {
+    transform: scale(5);
+}
 /* .TERA,.GIGA,.MEGA, .KILO{
     display: flex;
     justify-content: center;
@@ -41,6 +59,9 @@
   
 
 }
+
+
+
 .TERA{
     height: 30px;
 }

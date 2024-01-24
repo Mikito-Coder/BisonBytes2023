@@ -14,6 +14,10 @@ function open_window(ele_clicked) {
         window_2_be_opened = document.getElementById("window_sponsors_only")
 
     }
+    else if (button_id == "open_registration_part") {
+        window_2_be_opened = document.getElementById("window_registration")
+
+    }
     else{
         console.log("doesn't exits",window_2_be_opened,window_2_be_opened.toString()=="NaN",window_2_be_opened.toString())
     }
@@ -30,7 +34,11 @@ function open_window(ele_clicked) {
         window_2_be_opened.style.left = whereY+"%";
         console.log("niwuefhuiwehfuiehfw",whereX, whereY, window_2_be_opened.style.top,window_2_be_opened.style.left )
 
-
+        const windows = document.querySelectorAll(".window_box");
+        windows.forEach(other_window => {
+            other_window.parentNode.style.zIndex = "1";
+        });
+        window_2_be_opened.style.zIndex = "10";
     }
 }
 
