@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "roboto", sans-serif;
+   background-color: rgb(78, 220, 173);  
+   display: flex;
+   justify-content: center;
+   padding-top: 200px;
+
+
+
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+#ch{
+  display: none;   
+}
+
+#ch:checked ~ .content {
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+.content{
+    display: none;
+}
+label{
+   display: inline-block;
+   cursor: pointer;
+   color: #fff;
+   background-color: rgb(72, 113, 97);
+   padding: 3px 13px;
+   border-radius: 3px;
+   margin-top: 12px;
+
+
+
+}
