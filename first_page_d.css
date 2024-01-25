@@ -69,12 +69,22 @@ display:block;
   height: 500px;
   position: absolute;
   
+  top: 20%;
+  left: 30%;
+
+}
+
+
+.faq_window{
+  width: 500px;
+  height: 700px;
+  position: absolute;
   
   top: 20%;
   left: 30%;
-  
 
 }
+
 .only_sponsors_window {
   width: 500px;
   height: 700px;

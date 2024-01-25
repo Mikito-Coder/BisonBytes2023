@@ -18,6 +18,10 @@ function open_window(ele_clicked) {
         window_2_be_opened = document.getElementById("window_registration")
 
     }
+    else if (button_id == "open_questions_screen") {
+        window_2_be_opened = document.getElementById("faq_window")
+
+    }
     else{
         console.log("doesn't exits",window_2_be_opened,window_2_be_opened.toString()=="NaN",window_2_be_opened.toString())
     }
