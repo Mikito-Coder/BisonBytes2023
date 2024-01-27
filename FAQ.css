@@ -1,19 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-  font-family: "roboto", sans-serif;
-   background-color: rgb(78, 220, 173);  
-   display: flex;
-   justify-content: center;
-   padding-top: 200px;
 
 
-
-}
 
 .card{
     background-color: white;

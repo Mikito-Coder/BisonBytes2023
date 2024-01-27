@@ -1,57 +1,43 @@
-.app_icon {
-    height: 90%;
-    width: 80%;
-    
-}
-
-.app_icon img {
-    height: 100%;
-    width: 100%;
-}
-
 .app_clicked {
-    height: 20px;
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0);
-    margin: 0px;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  /* align-items: center;
+  justify-content: center; */
+  /* padding: 50px; */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px;
 
-    border-radius: 1rem;
+  border-radius: 1rem;
 
+
+  text-align: center;
+  font-size: 10px;
 }
 
-
-.app_clicked input{
-    height: 80px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.app_clicked input {
+  height: 50%;
+  width: 50%;
 }
 
+.all_app_buttons {
+  color: rgba(251, 255, 3, 0.934);
 
-.all_app_buttons{
+  /* display: grid;
+  gap: 5px 0.5rem; */
 
-    color: rgba(251, 255, 3, 0.934);
-    text-align: center;
+  justify-content: end;
+  margin: 100px;
+  display: grid;
 
-    margin: 20px;
-    position: absolute;
-    backface-visibility: hidden;
-  
-    display: flex;
-    align-items:end;
-    justify-content: center;
-    flex-direction: column;
-
-
-    position: absolute;
-right: 10px;
-top: 200px
-  }
-  
-  
+    grid-template-columns: 1fr;    
+}
+@media screen and (max-height: 800px) {
+  .all_app_buttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(95px, 1fr);   
+        /* grid-row-gap: 20px; */
+    /* grid-column-gap: 20px; */
+}
+}
