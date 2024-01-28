@@ -48,7 +48,7 @@ function open_window(ele_clicked) {
 
 function app_back_color(ele_clicked){
     // console.log("color change")
-
+    ele_clicked =  ele_clicked.getElementsByClassName("app_text_tille")[0]
     ele_clicked.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
     
     document.onmousedown = function (e) {

@@ -9,7 +9,6 @@
   background-color: rgba(0, 0, 0, 0);
   margin: 0px;
 
-  border-radius: 1rem;
 
 
   text-align: center;
@@ -20,6 +19,14 @@
   height: 50%;
   width: 50%;
 }
+
+.app_clicked h4 {
+  height: 30%;
+  width: 100%;
+}
+/* .app_text_tille{
+  height: 30px;
+} */
 
 .all_app_buttons {
   color: rgba(251, 255, 3, 0.934);

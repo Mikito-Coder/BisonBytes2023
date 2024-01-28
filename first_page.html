@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    
     <a
       id="mlh-trust-badge"
       style="
@@ -31,17 +32,30 @@
         alt="Major League Hacking 2024 Hackathon Season"
         style="width: 100%"
     /></a>
-    <div class="top_bar">
-      <h4 class="top_bar_name">
+
+
+    <div class="bottom_bar">
+      
+      <button class="bottom_start_button" onclick="black_out(this)" id="bottom_bar_info">
         BisonBytes
-      </h4>
+      </button>
+      <button class="bottom_start_button" onclick="add_windows_tab(this)" id="bottom_bar_registration">
+        Registration
+      </button>
+      <button class="bottom_start_button" onclick="add_windows_tab(this)" id="bottom_bar_sponsors" >
+        Sponsors
+      </button>
+      
       <div class="top_logo">
       </div>
       <span id="datetime"></span>
     </div>
+    <div class="bottom_blackout">
+      
+    </div>
 
     <div class="all_app_buttons">
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -49,9 +63,9 @@
           onclick="open_window(this)"
           id="open_start_widow"
         />
-        <h4>BisonBytes</h4>
+        <h4 class="app_text_tille">BisonBytes</h4>
       </div>
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -59,9 +73,9 @@
           onclick="open_window(this)"
           id="open_tracks_part"
         />
-        <h4>Tracks</h4>
+        <h4 class="app_text_tille">Tracks</h4>
       </div>
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -69,9 +83,9 @@
           onclick="open_window(this)"
           id="open_sponsors_part"
         />
-        <h4>Sponsors</h4>
+        <h4 class="app_text_tille">Sponsors</h4>
       </div>
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -79,9 +93,9 @@
           onclick="open_window(this)"
           id="open_registration_part"
         />
-        <h4>registration</h4>
+        <h4 class="app_text_tille">registration</h4>
       </div>
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -89,9 +103,9 @@
           onclick="open_window(this)"
           id="open_questions_screen"
         />
-        <h4>Questions</h4>
+        <h4 class="app_text_tille">Questions</h4>
       </div>
-      <div class="app_clicked" onclick="app_back_color(this)">
+      <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
         <input
           type="image"
           class=""
@@ -99,7 +113,7 @@
           onclick="remove_all_window(this)"
           id="clearWindows"
         />
-        <h4>clear screen</h4>
+        <h4 class="app_text_tille">clear screen</h4>
       </div>
     </div>
 
@@ -280,7 +294,7 @@
         </div>
       </div>
 
-      <div class="faq_window" onclick="move(this);" id="fqa page">
+      <!-- <div class="faq_window" onclick="move(this);" id="fqa page">
         <div class="window_box">
           <div class="top_box">
             <div class="top_click_box">
@@ -318,7 +332,7 @@
               <label for="ch"> Show Less</label>
           </div>
           <label for="ch"> Read More</label>
-      </div>
+      </div> -->
 
 
           </div>
@@ -345,7 +359,8 @@
     </div>
   </div>
 
-    <script src="move_box.js"></script>
-    <script src="main_page_f.js"></script>
+  <script src="move_box.js"></script>
+  <script src="main_page_f.js"></script>
+  <script src="main_page_f.js"></script>
   </body>
 </html>
