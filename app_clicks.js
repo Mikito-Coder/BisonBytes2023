@@ -1,17 +1,19 @@
 function open_window(ele_clicked) {
     var window_2_be_opened = NaN;
-    var button_id = ele_clicked.id
+    var button_id = ele_clicked.id;
+    var bottom_bar_id_button = NaN
     //console.log(ele_clicked.id)
     if (button_id == "open_start_widow") {
         window_2_be_opened = document.getElementById("title page")
+        bottom_bar_id_button = document.getElementById("bottom_bar_info")
     }
     else if (button_id == "open_tracks_part") {
         window_2_be_opened = document.getElementById("window_tracks_and_sponsors")
-        console.log("blahbalah",window_2_be_opened.style.display)
-
+        bottom_bar_id_button = document.getElementById("bottom_bar_registration")
     }
     else if (button_id == "open_sponsors_part") {
         window_2_be_opened = document.getElementById("window_sponsors_only")
+        bottom_bar_id_button = document.getElementById("bottom_bar_sponsors")
 
     }
     else if (button_id == "open_registration_part") {
@@ -43,6 +45,10 @@ function open_window(ele_clicked) {
             other_window.parentNode.style.zIndex = "1";
         });
         window_2_be_opened.style.zIndex = "10";
+
+
+        // hree is wher the button will look pressed
+        bottom_bar_id_button.style.backgroundColor = 'rgb(0, 0, 0,0.1)';
     }
 }
 

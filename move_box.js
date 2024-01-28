@@ -1,14 +1,23 @@
 // var exit = document.querySelectorAll(".exit_box");
 // var display = 0;
 function hideShow(the_exit_box) {
+    var bottom_bar_id_button = NaN
 
     const whole_window = the_exit_box.parentElement.parentElement.parentElement.parentElement;
-
+    console.log(whole_window.id,"hi")
     if (whole_window.display == 1) {
         whole_window.style.display = 'block';
     }
     else {
         whole_window.style.display = 'none';
+        if (whole_window.id=="title page"){
+
+        }
+        else if(whole_window.id=="window_sponsors_only"){
+            bottom_bar_id_button = document.getElementById("bottom_bar_sponsors")
+            bottom_bar_id_button.style.backgroundColor = 'rgb(72, 72, 72)';
+        }
+        
     }
 
 }
