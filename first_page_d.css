@@ -4,7 +4,7 @@ body {
 height: 100%;
 width: 100%;
   /* background-color: #00305b !important; */
-background-image: url("images/Screenshot 2023-12-23 at 6.58.44 PM.png");
+background-image: url("images/femi_redesign2.png");
 background-repeat:no-repeat;
 background-position: center center;
 background-size:cover;
@@ -45,9 +45,9 @@ display:block;
 }
 .bottom_start_button{
   padding: 10px;
-  color: #ffffff;
+  color: black;
   margin: 1px;
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(164, 164, 164);
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
   outline: 2px solid;
   outline-color: black;
@@ -89,8 +89,8 @@ display:block;
 }
 
 .tile_window{
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   
   top: 20%;

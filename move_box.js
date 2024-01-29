@@ -15,7 +15,7 @@ function hideShow(the_exit_box) {
         }
         else if(whole_window.id=="window_sponsors_only"){
             bottom_bar_id_button = document.getElementById("bottom_bar_sponsors")
-            bottom_bar_id_button.style.backgroundColor = 'rgb(72, 72, 72)';
+            bottom_bar_id_button.style.backgroundColor = 'rgb(164, 164, 164)';
         }
         
     }

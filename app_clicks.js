@@ -48,7 +48,7 @@ function open_window(ele_clicked) {
 
 
         // hree is wher the button will look pressed
-        bottom_bar_id_button.style.backgroundColor = 'rgb(0, 0, 0,0.1)';
+        bottom_bar_id_button.style.backgroundColor = 'rgb(164, 164, 164)';
     }
 }
 
