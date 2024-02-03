@@ -10,6 +10,7 @@ function hideShow(the_exit_box) {
     }
     else {
         whole_window.style.display = 'none';
+        
         if (whole_window.id=="title page"){
 
         }
