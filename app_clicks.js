@@ -21,7 +21,7 @@ function open_window(ele_clicked) {
 
     }
     else if (button_id == "open_questions_screen") {
-        window_2_be_opened = document.getElementById("faq_window")
+        window_2_be_opened = document.getElementById("fqa_page")
 
     }
     else{
@@ -33,8 +33,8 @@ function open_window(ele_clicked) {
 
         window_2_be_opened.style.display = 'block'
         console.log(document.documentElement.clientWidth)
-        var whereX = Math.floor(Math.random() * (30))+10;
-        var whereY = Math.floor(Math.random() * (40));
+        var whereX = Math.floor(Math.random() * (70))-10;
+        var whereY = Math.floor(Math.random() * (20));
 
         window_2_be_opened.style.top = whereX+"%";
         window_2_be_opened.style.left = whereY+"%";

@@ -1,6 +1,3 @@
-body {
-  background-color: snow;
-}
 
 .tracks_part {
   background-color: rgb(255, 255, 255);
@@ -62,17 +59,20 @@ body {
 }
 
 .front {
-  background-color: rgb(128, 142, 222);
+  background-color: rgb(46, 71, 214);
   /* background-color: FFCD4B; */
+  outline: 5px solid;
 
   opacity: 80%;
-  box-shadow: 5px 5px 5px rgb(86, 85, 80);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .back {
   transform: rotateY(180deg);
   color: black;
   opacity: 100%;
+  outline: 5px solid;
+
 }
 .back img {
   width: 80%;
