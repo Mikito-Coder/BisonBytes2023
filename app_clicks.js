@@ -33,11 +33,11 @@ function open_window(ele_clicked) {
 
         window_2_be_opened.style.display = 'block'
         console.log(document.documentElement.clientWidth)
-        var whereX = Math.floor(Math.random() * (70))-10;
-        var whereY = Math.floor(Math.random() * (20));
+        var whereX = Math.floor(Math.random() * (40))+20;
+        var whereY = Math.floor(Math.random() * (30))+10;
 
-        window_2_be_opened.style.top = whereX+"%";
-        window_2_be_opened.style.left = whereY+"%";
+        window_2_be_opened.style.top = whereY+"%";
+        window_2_be_opened.style.left = whereX+"%";
         console.log("niwuefhuiwehfuiehfw",whereX, whereY, window_2_be_opened.style.top,window_2_be_opened.style.left )
 
         const windows = document.querySelectorAll(".window_box");
@@ -48,7 +48,7 @@ function open_window(ele_clicked) {
 
 
         // hree is wher the button will look pressed
-        bottom_bar_id_button.style.backgroundColor = 'rgb(0, 164, 164)';
+        bottom_bar_id_button.style.backgroundColor = 'rgb(164, 164, 164)';
     }
 }
 
