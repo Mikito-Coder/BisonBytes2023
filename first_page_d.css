@@ -201,6 +201,7 @@ display:block;
   flex-direction: column;
   /* background-image: url('images/reg_back1.jpg.avif'); */
   background-color: rgb(0, 0, 0);
+  height: 100%;
 
 
 }
