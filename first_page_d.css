@@ -164,6 +164,7 @@ display:block;
   background-color: rgb(174, 198, 207);
   position: absolute;
   display: flex;
+  z-index: 10;
 }
 
 .top_click_box {
