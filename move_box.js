@@ -5,11 +5,6 @@ window.onload = function () {
     const windows = document.querySelectorAll(".window_box");
 
 
-    windows.forEach(other_window => {
-        // console.log("parenttt ", other_window.parentNode)
-        other_window.parentNode.style.zIndex = "1";
-    });
-    //ele_clicked.style.zIndex = "10";
 
 
 

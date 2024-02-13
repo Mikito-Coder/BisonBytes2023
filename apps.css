@@ -31,9 +31,13 @@
 } */
 
 .all_app_buttons {
-  color: rgba(251, 255, 3, 0.934);
+  color: rgb(27, 27, 27);
 
-  /* display: grid;
+
+  /*
+    color: rgba(251, 255, 3, 0.934);
+
+  display: grid;
   gap: 5px 0.5rem; */
 
   /* justify-content: end;

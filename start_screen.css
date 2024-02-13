@@ -1,7 +1,10 @@
 .start_page{
     background-color: white;
+    background-image: url('images/opening graphic with date.jpg') ;
     text-align: center;
 flex-direction: column;
+background-size: cover;
+
 
 
 font-size: 10px;
