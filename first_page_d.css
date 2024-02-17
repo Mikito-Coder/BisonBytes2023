@@ -108,7 +108,7 @@ display:block;
   position: absolute;
   background-color: white !important;
   top: 10%;
-  left:10%;
+  left:15%;
   /* display:none; */
 
 
@@ -133,7 +133,7 @@ display:block;
   top: 20%;
   right: 0%;
   top: 10%;
-  right: 0%;
+  right: 5%;
 
 }
 .registration_window {
