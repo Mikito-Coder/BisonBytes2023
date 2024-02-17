@@ -162,3 +162,6 @@ function move(ele_clicked) {
     });
 }
 
+
+
+

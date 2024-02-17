@@ -5,7 +5,7 @@ height: 100%;
 width: 100%;
   /* background-color: #00305b !important; */
   /* background-image: url("images/femi_redesign2.png"); */
-  background-image: url("images/maybebackground7.jpg");
+  background-image: url("images/pixelated_background_window.jpeg");
 background-repeat:no-repeat;
 background-position: center center;
 background-size:cover;
@@ -79,6 +79,7 @@ display:block;
   position: absolute;
   top: 30%;
   left: 10%;
+  display:none;
 
 
   
@@ -96,19 +97,19 @@ display:block;
   position: absolute;
   
   top: 20%;
-  left: 30%;
+  left: 35%;
 
   z-index: 100000000;
 
 }
 .questionClickme{
-  width: 500px;
-  height: 700px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   background-color: white !important;
-  top: 20%;
-  left: 30%;
-  display:none;
+  top: 10%;
+  left:10%;
+  /* display:none; */
 
 
 }
@@ -132,7 +133,7 @@ display:block;
   top: 20%;
   right: 0%;
   top: 10%;
-  left: 50%;
+  right: 0%;
 
 }
 .registration_window {
@@ -226,3 +227,8 @@ display:block;
   /* background-image: url('images/reg_back1.jpg.avif'); */
 }
 
+
+.drag_me{
+  margin-top:  40px;
+  padding: 20px;
+}
