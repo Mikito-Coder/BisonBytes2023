@@ -12,7 +12,7 @@
 }
 
 .sponsor_head {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
   }
   
@@ -48,7 +48,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 1px 0;
-    margin: 40px;
+    margin: 20px;
     height: 50px;
 }
 
@@ -59,13 +59,25 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 1px 0;
-    margin: 40px;
+    margin: 20px;
     height: 50px;
     width: 25%;
     margin: 20px;
 }
 
 .MEGA_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1px 0;
+    margin: 40px;
+    height: 50px;
+    width: 20%;
+    margin: 20px;
+}
+
+.KILO_images{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -90,7 +102,7 @@
 }
 
 .TERA_images img{
-    margin-top: 8px;
+    margin-top: 2px;
     vertical-align: middle;
     width: 60%;
     height: auto;
@@ -111,16 +123,18 @@
     height: auto;
     
 }
-
-/* .GIGA_images img{
-    width: 40%;
+.KILO_images img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 105%;
+    height: auto;
+    
 }
-.MEGA_images img{
-    width: 40%;
-} */
 
-
-
+.KILO_images:hover {
+    transform: scale(1.1);
+}
+  
 
 .GIGA_images:hover {
     transform: scale(1.2);
@@ -133,11 +147,12 @@
 }
 
 
-.tera_sponsors,.giga_sponsors,.mega_sponsors{
+.tera_sponsors,.giga_sponsors,.mega_sponsors,.kilo_sponsors{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 1px 0;
+    padding: 0px;
     
 }
