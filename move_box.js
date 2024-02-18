@@ -28,26 +28,39 @@ window.onload = function () {
                 if (true) {// idk why this isn;rt workinh
                     const mouseX = e.movementX;
                     const mouseY = e.movementY;
-                    let x = e.pageX - this.state.rel.x;
-                    let y = e.pageY - this.state.rel.y;
                     each_window.parentNode.style.left = e.targetTouches[0].pageX + 'px';
                     each_window.parentNode.style.top = e.targetTouches[0].pageY + 'px';
-                    console.log("NAHHHHHHh", e.changedTouches[0].pageX,e.changedTouches[0].pageY,)
+                    // console.log("NAHHHHHHh", e.changedTouches[0].pageX,e.changedTouches[0].pageY,)
+                 
 
-                    if (x < 0 || x > each_window.innerWidth - this.state.dialogWidth) {
-                        each_window.parentNode.style.left = each_window.innerWidth - this.state.dialogWidth+ 'px';
 
-                    }
-                    else{
-                        each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
-                    }
-                    if (y < 0 || y > each_window.innerHeight - this.state.dialogHeight) {
-                        each_window.parentNode.style.top = each_window.innerHeight - this.state.dialogHeight;
-                    }
-                    else{
-                        each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+                    each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
+                    each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+                    var w = window.screen.width;
+                    
+                    var h = window.screen.height;
+                    console.log("NAHHHHHHh",w,h)
 
-                    }
+                    // each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+                    // each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
+
+
+
+
+                    // if (x < 0 || x > each_window.innerWidth - this.state.dialogWidth) {
+                    //     each_window.parentNode.style.left = each_window.innerWidth - this.state.dialogWidth+ 'px';
+
+                    // }
+                    // else{
+                    //     each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
+                    // }
+                    // if (y < 0 || y > each_window.innerHeight - this.state.dialogHeight) {
+                    //     each_window.parentNode.style.top = each_window.innerHeight - this.state.dialogHeight;
+                    // }
+                    // else{
+                    //     each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
+
+                    // }
                     console.log("moved")
                     //console.log(mouseX, mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
                     //console.log(parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length)))

@@ -1,31 +1,38 @@
 @import url("//fonts.googleapis.com/css?family=Press+Start+2P");
 
 body {
-height: 100%;
-width: 100%;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+
+  min-width: 100%;
+
+
   /* background-color: #00305b !important; */
-  /* background-image: url("images/femi_redesign2.png"); */
+  
   background-image: url("images/pixelated_background_window.jpeg");
-background-repeat:no-repeat;
-background-position: center center;
-background-size:cover;
-background-repeat: no-repeat;
-  /* font-family: "American Typewriter", Calibri, Tahoma, sans-serif; */
-  /* font-family: 'Petyka - Retro Computer___SHORT', sans-serif; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+
+
   font-family: 'Press Start 2P', cursive;
 
-overflow: hidden; 
-display:block;
- /* can't highlight anything */
- -ms-user-select: none;
- user-select: none;
- -moz-user-select: none;
- -khtml-user-select: none;
- -webkit-user-select: none;
- 
- margin:0px;
+  overflow: hidden;
+  display: block;
+  /* can't highlight anything */
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
 
-  
+  margin: 0px;
+
+
 }
 
 
@@ -42,17 +49,18 @@ display:block;
   bottom: 0;
   box-shadow: 5px 5px 10px 5px rgb(29, 29, 29);
   outline: 5px solid;
-  outline-color:rgb(39, 137, 57);
-  
+  outline-color: rgb(39, 137, 57);
+
 }
-.bottom_start_button{
+
+.bottom_start_button {
   padding: 10px;
   color: black;
   margin: 2px;
   background-color: rgb(164, 164, 164);
   box-shadow: 5px 5px 10px rgb(164, 164, 164);
   outline: 2px solid;
-  outline-color:rgb(164, 164, 164);
+  outline-color: rgb(164, 164, 164);
 
   height: 80%;
   text-align: center;
@@ -60,29 +68,31 @@ display:block;
 
 }
 
-.bottom_blackout{
-  width:100%;
+.bottom_blackout {
+  width: 100%;
   height: 100%;
   background-color: black;
-    display:none;
+  display: none;
 
 }
+
 .large_window {
   width: 400px;
   height: 500px;
   position: absolute;
 }
+
 .tracks_and_sponsors_window {
   width: 400px;
   height: 500px;
- 
+  min-width: 400px;
   position: absolute;
   top: 30%;
   left: 10%;
-  display:none;
+  /* display:none; */
 
 
-  
+
 }
 
 .mid_window {
@@ -91,43 +101,49 @@ display:block;
   position: absolute;
 }
 
-.tile_window{
+.tile_window {
   width: 400px;
+  min-width: 400px;
   height: 400px;
   position: absolute;
-  
+
   top: 20%;
   left: 35%;
 
-  z-index: 100000000;
+  /* z-index: 100000000; */
 
 }
-.questionClickme{
+
+.questionClickme {
   width: 200px;
+  min-width: 200px;
   height: 200px;
   position: absolute;
   background-color: white !important;
   top: 10%;
-  left:15%;
+  left: 15%;
   /* display:none; */
 
 
 }
 
-.faq_window{
+.faq_window {
   width: 400px;
   height: 400px;
+  min-width: 400px;
   position: absolute;
   background-color: white !important;
   top: 20%;
   left: 30%;
-  display:none;
+  display: none;
 
 
 }
 
 .only_sponsors_window {
   width: 500px;
+  min-width: 500px;
+
   height: 600px;
   position: absolute;
   top: 20%;
@@ -136,13 +152,14 @@ display:block;
   right: 5%;
 
 }
+
 .registration_window {
   width: 500px;
   height: 700px;
   position: absolute;
   top: 20%;
   right: 0%;
-  display:none;
+  display: none;
 
 }
 
@@ -155,7 +172,7 @@ display:block;
   place-items: center;
   border-radius: 0.3rem;
   overflow: hidden;
-  
+
 
 }
 
@@ -165,17 +182,17 @@ display:block;
   background-color: rgb(174, 198, 207);
   position: absolute;
   display: flex;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .top_click_box {
   width: 100%;
   height: 100%;
-  background-color: #3569d2; 
+  background-color: #3569d2;
   position: absolute;
   cursor: move;
   display: flex;
-  
+
   align-items: center;
   justify-content: right;
   outline: 3px solid;
@@ -200,6 +217,7 @@ display:block;
 
   box-shadow: 5px 5px 10px rgb(29, 29, 29);
 }
+
 .exit_box h1 {
   height: 100%;
 
@@ -209,7 +227,8 @@ display:block;
 .top_logo img {
   width: 5%;
 }
-.registration_page{
+
+.registration_page {
   text-align: center;
   color: #ffffff;
   flex-direction: column;
@@ -220,15 +239,15 @@ display:block;
 
 }
 
-.bottom_reg{
-  width:100%;
+.bottom_reg {
+  width: 100%;
   height: 80%;
   background-color: rgb(0, 0, 0);
   /* background-image: url('images/reg_back1.jpg.avif'); */
 }
 
 
-.drag_me{
-  margin-top:  40px;
+.drag_me {
+  margin-top: 40px;
   padding: 20px;
 }
