@@ -238,7 +238,17 @@ body {
 
 
 }
+.registration_form{
+  height: 100%;
+width: 100%;
+  /* padding: 10px; */
 
+
+}
+
+.registration_page_tile{
+  padding: 10px;
+}
 .bottom_reg {
   width: 100%;
   height: 80%;
