@@ -263,18 +263,19 @@ width: 100%;
 }
 
 .regisatar_now_button{
-  height: 200px;
+  
+  height: 150px;
   width: 200px;
   
   position: absolute;
-  bottom: -60;
+  bottom: -30px;
   left: 100px;
+ 
 
 }
 .regisatar_now_button img{
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
-  bottom: 0;
 
 }

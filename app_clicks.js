@@ -38,7 +38,7 @@ function open_window(ele_clicked) {
 
         window_2_be_opened.style.display = 'block'
         console.log(document.documentElement.clientWidth)
-        var whereX = Math.floor(Math.random() * (40))+20;
+        var whereX = Math.floor(Math.random() * (20))+20;
         var whereY = Math.floor(Math.random() * (5))+10;
 
         window_2_be_opened.style.top = whereY+"%";
