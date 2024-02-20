@@ -27,12 +27,7 @@ function open_window(ele_clicked) {
     else if(button_id == "open_insta"){
         window.open("https://www.instagram.com/bison.bytes/", "_blank");
 
-    //     <a
-    //     href="https://www.instagram.com/bison.bytes/"
-    //     target="_blank"
-    //   >
-    //     <img src="images/tumblr_nrfmy1U9Th1uathmoo1_640.png" />
-    //   </a>
+
     }
     else{
         console.log("doesn't exits",window_2_be_opened,window_2_be_opened.toString()=="NaN",window_2_be_opened.toString())
@@ -49,13 +44,19 @@ function open_window(ele_clicked) {
         window_2_be_opened.style.top = whereY+"%";
         window_2_be_opened.style.left = whereX+"%";
         console.log("niwuefhuiwehfuiehfw",whereX, whereY, window_2_be_opened.style.top,window_2_be_opened.style.left )
-
+        
         const windows = document.querySelectorAll(".window_box");
         windows.forEach(other_window => {
             other_window.parentNode.style.zIndex = "1";
         });
         window_2_be_opened.style.zIndex = "10";
 
+        if (button_id == "open_registration_part") {
+            window_2_be_opened.style.top = 20+"%";
+            window_2_be_opened.style.left = 35+"%";
+            window_2_be_opened.style.zIndex = "1";
+
+        }
 
         // hree is wher the button will look pressed
         bottom_bar_id_button.style.backgroundColor = 'rgb(164, 164, 164)';
