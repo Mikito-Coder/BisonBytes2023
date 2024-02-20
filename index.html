@@ -1,25 +1,22 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="first_page_d.css" />
-    <link rel="stylesheet" type="text/css" href="sponsors_d.css" />
-    <link rel="stylesheet" type="text/css" href="tracks_d.css" />
-    <link rel="stylesheet" type="text/css" href="start_screen.css" />
-    <link rel="stylesheet" type="text/css" href="apps.css" />
-    <link rel="stylesheet" type="text/css" href="FAQ.css" />
-    <link
-      href="https://fonts.cdnfonts.com/css/petyka-retro-computer"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="images/logos/BisonBytes-whiteCompMark.png" />
-    <link rel="icon" href="images/logos/BisonBytes-whiteCompMark.png">
 
-    <title>BisonBytes</title>
-  </head>
+<head>
+  <link rel="stylesheet" type="text/css" href="first_page_d.css" />
+  <link rel="stylesheet" type="text/css" href="sponsors_d.css" />
+  <link rel="stylesheet" type="text/css" href="tracks_d.css" />
+  <link rel="stylesheet" type="text/css" href="start_screen.css" />
+  <link rel="stylesheet" type="text/css" href="apps.css" />
+  <link rel="stylesheet" type="text/css" href="FAQ.css" />
+  <link rel="stylesheet" type="text/css" href="background_imgs.css" />
+  <link href="https://fonts.cdnfonts.com/css/petyka-retro-computer" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logos/BisonBytes-whiteCompMark.png" />
+  <link rel="icon" href="images/logos/BisonBytes-whiteCompMark.png">
 
-  <body>
-    <a
-      id="mlh-trust-badge"
-      style="
+  <title>BisonBytes</title>
+</head>
+
+<body>
+  <a id="mlh-trust-badge" style="
         display: block;
         max-width: 100px;
         min-width: 60px;
@@ -29,484 +26,378 @@
         width: 10%;
         z-index: 10000;
       "
-      href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
-      target="_blank"
-      ><img
-        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-        alt="Major League Hacking 2024 Hackathon Season"
-        style="width: 100%"
-    /></a>
+    href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+    target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+      alt="Major League Hacking 2024 Hackathon Season" style="width: 100%" /></a>
 
-    <div class="bottom_bar">
-      <button
-        class="bottom_start_button"
-        onclick="black_out(this)"
-        id="start button"
-      >
-        Start
-      </button>
-      <button
-        class="bottom_start_button"
-        onclick="add_windows_tab(this)"
-        id="bottom_bar_info"
-      >
-        BisonBytes
-      </button>
-      <button
-        class="bottom_start_button"
-        onclick="add_windows_tab(this)"
-        id="bottom_bar_registration"
-      >
-        Registration
-      </button>
-      <button
-        class="bottom_start_button"
-        onclick="add_windows_tab(this)"
-        id="bottom_bar_sponsors"
-      >
-        Sponsors
-      </button>
+  <div class="bottom_bar">
+    <button class="bottom_start_button" onclick="black_out(this)" id="start button">
+      Start
+    </button>
+    <button class="bottom_start_button" onclick="add_windows_tab(this)" id="bottom_bar_info">
+      BisonBytes
+    </button>
+    <button class="bottom_start_button" onclick="add_windows_tab(this)" id="bottom_bar_registration">
+      Registration
+    </button>
+    <button class="bottom_start_button" onclick="add_windows_tab(this)" id="bottom_bar_sponsors">
+      Sponsors
+    </button>
 
-      <div class="top_logo"></div>
-      <span id="datetime"></span>
+    <div class="top_logo"></div>
+    <span id="datetime"></span>
+  </div>
+
+  <!-- <marquee class ="background_imgs"><img src="images/cloud_1.png" width="94" height="88" alt="Swimming fish"></marquee>
+  <div class="clouds_img">
+    <img src="images/cloud_1.png" width="94" height="88" alt="Swimming fish">
+
+  </div> -->
+ 
+
+
+
+
+  <div class="bottom_blackout"></div>
+
+  <div class="all_app_buttons">
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/yellow_folder.png" onclick="open_window(this)" id="open_start_widow" />
+      <h4 class="app_text_tille">BisonBytes</h4>
     </div>
 
-    <div class="bottom_blackout"></div>
 
-    <div class="all_app_buttons">
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/yellow_folder.png"
-          onclick="open_window(this)"
-          id="open_start_widow"
-        />
-        <h4 class="app_text_tille">BisonBytes</h4>
-      </div>
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/track_logo.png"
-          onclick="open_window(this)"
-          id="open_tracks_part"
-        />
-        <h4 class="app_text_tille">Tracks</h4>
-      </div>
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/money_pixel_art.png"
-          onclick="open_window(this)"
-          id="open_sponsors_part"
-        />
-        <h4 class="app_text_tille">Sponsors</h4>
-      </div>
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/pixel-art-book-icon-png.png"
-          onclick="open_window(this)"
-          id="open_registration_part"
-        />
-        <h4 class="app_text_tille">Registration</h4>
-      </div>
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/questions_folder.gif"
-          onclick="open_window(this)"
-          id="open_questions_screen"
-        />
-        <h4 class="app_text_tille">Questions</h4>
-      </div>
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/sponsrs_logo3.png" onclick="open_window(this)" id="open_sponsors_part" />
+      <h4 class="app_text_tille">Sponsors</h4>
+    </div>
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/mario_unknown.png" onclick="open_window(this)" id="open_tracks_part" />
+      <h4 class="app_text_tille">Tracks</h4>
+    </div>
+
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/pixel-art-book-icon-png.png" onclick="open_window(this)"
+        id="open_registration_part" />
+      <h4 class="app_text_tille">Registration</h4>
+    </div>
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/questions_folder.gif" onclick="open_window(this)"
+        id="open_questions_screen" />
+      <h4 class="app_text_tille">Questions</h4>
+    </div>
 
 
-      <div
-        class="app_clicked"
-      
-        >
-         
+    <div class="app_clicked">
 
-        <input
-          type="image"
-          class=""
-          src="images/tumblr_nrfmy1U9Th1uathmoo1_640.png"
-          onclick="open_window(this)"
-          id="open_insta"
-        />
+
+      <input type="image" class="" src="images/tumblr_nrfmy1U9Th1uathmoo1_640.png" onclick="open_window(this)"
+        id="open_insta" />
       <h4 class="app_text_tille">Instagram</h4>
     </div>
-      <div
-        class="app_clicked"
-        onclick="app_back_color(this)"
-        onmouseover="hover_button(this)"
-      >
-        <input
-          type="image"
-          class=""
-          src="images/recycle_bin_empty-2.png"
-          onclick="remove_all_window(this)"
-          id="clearWindows"
-        />
-        <h4 class="app_text_tille">CLEAR SCREEN</h4>
-      </div>
-
-      
-
+    <div class="app_clicked" onclick="app_back_color(this)" onmouseover="hover_button(this)">
+      <input type="image" class="" src="images/recycle_bin_empty-2.png" onclick="remove_all_window(this)"
+        id="clearWindows" />
+      <h4 class="app_text_tille">CLEAR SCREEN</h4>
     </div>
-    <!-- <div class="background_imgs">
-      
-      <img src="images/apply_now_sign.png" />
-      <input
-      type="image"
-      class=""
-      src="images/recycle_bin_empty-2.png"
-      onclick="remove_all_window(this)"
-      id="clearWindows"
-    />
-    </div> -->
+
+
+
+  </div>
+  
 
 
 
 
-    <div id="all_windows">
-      <div class="tile_window" onclick="move(this);" id="title page">
-        <div class="window_box">
-          <div class="top_box">
-            <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)">X</div>
-            </div>
-          </div>
-          <div class="start_page">
 
-            <div class="regisatar_now_button"  onclick="open_window(this)"
-            id="open_registration_part">
-
-
-              <img src="images/apply_now_sign.png" />
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="faq_window" onclick="move(this);" id="fqa_page">
-        <div class="window_box">
-          <div class="top_box">
-            <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)">X</div>
-            </div>
-          </div>
-          <div class="faq_page">
-            <section class="faq-section">
-              <h2>Frequently Asked Questions</h2>
-
-              <details class="faq">
-                <summary>How can I get to BisonBytes?</summary>
-                <p></p>
-              </details>
-
-              <details class="faq">
-                <summary>Will there acctually be PS5's?</summary>
-                <p>👀</p>
-              </details>
-
-              <details class="faq">
-                <summary>Is it hosted by Howard?</summary>
-                <p>
-                  Yes the hackathon is Hosted by Howard Student Council and Tech
-                  for Change
-                </p>
-              </details>
-
-              <details class="faq">
-                <summary>When and where is Bison Bytes happening</summary>
-                <p>March 30th-March 31st 2024</p>
-              </details>
-
-              <details class="faq">
-                <summary>Who can participate?</summary>
-                <p>Undergraduate students</p>
-              </details>
-            </section>
+  <div id="all_windows">
+    <div class="tile_window" onclick="move(this);" id="title page">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <div class="exit_box" onclick="hideShow(this)">X</div>
           </div>
         </div>
-      </div>
+        <div class="start_page">
 
-      <div
-        class="tracks_and_sponsors_window"
-        onclick="move(this)"
-        ;
-        id="window_tracks_and_sponsors"
-      >
-        <div class="window_box">
-          <div class="top_box">
-            <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)">X</div>
-            </div>
+          <div class="regisatar_now_button" onclick="open_window(this)" id="open_registration_part">
+
+
+            <img src="images/apply_now_sign.png" />
+
           </div>
+        </div>
 
-          <div class="tracks_part">
-            <div class="window_page_extra_space"></div>
-            <div class="track_titel">
-              <h1>Tracks</h1>
+      </div>
+    </div>
+    <div class="faq_window" onclick="move(this);" id="fqa_page">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <div class="exit_box" onclick="hideShow(this)">X</div>
+          </div>
+        </div>
+        <div class="faq_page">
+          <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq">
+              <summary>How can I get to BisonBytes?</summary>
+              <p></p>
+            </details>
+
+            <details class="faq">
+              <summary>Will there acctually be PS5's?</summary>
+              <p>👀</p>
+            </details>
+
+            <details class="faq">
+              <summary>Is it hosted by Howard?</summary>
+              <p>
+                Yes the hackathon is Hosted by Howard Student Council and Tech
+                for Change
+              </p>
+            </details>
+
+            <details class="faq">
+              <summary>When and where is Bison Bytes happening</summary>
+              <p>March 30th-March 31st 2024</p>
+            </details>
+
+            <details class="faq">
+              <summary>Who can participate?</summary>
+              <p>Undergraduate students</p>
+            </details>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="tracks_and_sponsors_window" onclick="move(this)" ; id="window_tracks_and_sponsors">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <div class="exit_box" onclick="hideShow(this)">X</div>
+          </div>
+        </div>
+
+        <div class="tracks_part">
+          <div class="window_page_extra_space"></div>
+          <div class="track_titel">
+            <h1>Tracks</h1>
+          </div>
+          <div class="tracks_items">
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">
+                  Artificial intelligence/ Machine Learning
+                </h1>
+              </div>
+              <div class="back">
+                <img src="images/sponsors/Microsoft_logo.svg.png" />
+              </div>
             </div>
-            <div class="tracks_items">
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">
-                    Artificial intelligence/ Machine Learning
-                  </h1>
-                </div>
-                <div class="back">
-                  <img src="images/sponsors/Microsoft_logo.svg.png" />
-                </div>
-              </div>
 
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">Health</h1>
-                </div>
-                <div class="back">
-                  <img src="images/sponsors/Palantir_logo.jpg" />
-                </div>
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">Health</h1>
               </div>
-
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">Education</h1>
-                </div>
-                <div class="back">
-                  <img src="images/BisonBytes-blueCompMark-plain.png" />
-                </div>
+              <div class="back">
+                <img src="images/sponsors/Palantir_logo.jpg" />
               </div>
+            </div>
 
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">Gaming</h1>
-                </div>
-                <div class="back">
-                  <img src="images/BisonBytes-blueCompMark-plain.png" />
-                </div>
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">Education</h1>
               </div>
-
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">FINTECH</h1>
-                </div>
-                <div class="back">
-                  <img src="images/BisonBytes-blueCompMark-plain.png" />
-                </div>
+              <div class="back">
+                <img src="images/BisonBytes-blueCompMark-plain.png" />
               </div>
+            </div>
 
-              <div class="track_card">
-                <div class="front">
-                  <h1 class="track_text">😄</h1>
-                </div>
-                <div class="back">
-                  <!-- <h4 class="track_text">
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">Gaming</h1>
+              </div>
+              <div class="back">
+                <img src="images/BisonBytes-blueCompMark-plain.png" />
+              </div>
+            </div>
+
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">FINTECH</h1>
+              </div>
+              <div class="back">
+                <img src="images/BisonBytes-blueCompMark-plain.png" />
+              </div>
+            </div>
+
+            <div class="track_card">
+              <div class="front">
+                <h1 class="track_text">😄</h1>
+              </div>
+              <div class="back">
+                <!-- <h4 class="track_text">
                     No sponsor😄<br />If your project does not fall under a
                     track you can submit in this track
                   </h4> -->
+                <img src="images/mario_unknown.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="only_sponsors_window" onclick="move(this)" id="window_sponsors_only">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <div class="exit_box" onclick="hideShow(this)">X</div>
+          </div>
+        </div>
+        <div class="sponsor_part">
+          <div class="window_page_extra_space"></div>
+          <div class="sponsor_head">
+            <h3>Sponsors</h3>
+          </div>
+          <div class="sponsor_images">
+            <div class="tera_sponsors">
+              <div class="TERA_images">
+                <a href="https://www.microsoft.com/en-us/" target="_blank">
+                  <img src="images/sponsors/Microsoft_logo.svg.png" />
+                </a>
+              </div>
+              <div class="TERA_images">
+                <a href="https://www.palantir.com/careers/students/scholarship/future/" target="_blank">
+                  <img src="images/sponsors/Palantir_black.png" />
+                </a>
+              </div>
+            </div>
+
+            <div class="giga_sponsors">
+              <div class="GIGA_images">
+                <a href="https://www.dow.com/en-us" target="_blank">
+                  <img src="images/sponsors/Dow_Chemical_Company_logo.svg.png" />
+                </a>
+              </div>
+              <div class="GIGA_images">
+                <a href="https://www.fanniemae.com/careers" target="_blank">
+                  <img src="images/sponsors/fannie-mae-logo-white.webp.png" alt="Electronic Arts Logo" />
+                </a>
+              </div>
+              <div style="width: 20px;"></div>
+            </div>
+
+
+            <div class="mega_sponsors">
+              <div class="MEGA_images">
+                <a href="https://www.google.com/about/careers/applications/" target="_blank">
+                  <img src="images/sponsors/Google-logo.png" />
+                </a>
+              </div>
+              <div class="MEGA_images">
+                <a href="https://careers.united.com/us/en/" target="_blank">
+                  <img src="images/sponsors/United-Airlines-Logo.png" />
+                </a>
+              </div>
+              <div class="MEGA_images">
+                <a href="https://www.hudsonrivertrading.com/careers/" target="_blank">
+                  <img src="images/sponsors/hrt_logo.svg.png" />
+                </a>
+              </div>
+              <div class="MEGA_images">
+                <a href="https://careers.roblox.com" target="_blank">
+                  <img src="images/sponsors/roblox-logo-white-png-transparent.png" />
+                </a>
+              </div>
+              <div class="MEGA_images">
+                <a href="https://www.deshaw.com/careers" target="_blank">
+                  <img src="images/sponsors/de_shaw_logo.png" />
+                </a>
+              </div>
+              <div class="MEGA_images">
+                <a href="https://www.northropgrumman.com/careers" target="_blank">
+                  <img src="images/sponsors/Northrop_Grumman_logo_white-on-black.svg.png" />
+                </a>
+              </div>
+
+              <div class="MEGA_images">
+                <a href="https://www.redditinc.com/careers" target="_blank">
+                  <img src="images/sponsors/Reddit-Logo.wine.png" />
+                </a>
+              </div>
+
+            </div>
+
+
+            <div style="height: 100px;"></div>
+            <div class="kilo_sponsors">
+
+              <div class="KILO_images">
+                <a href="https://www3.mtb.com/homepage/diversity-equity-inclusion/join-us" target="_blank">
+                  <img src="images/sponsors/M&T_logo.svg.png" />
+                </a>
+              </div>
+
+
+              <div class="KILO_images">
+                <a href="https://www.selectquote.com/" target="_blank">
+                  <img src="images/sponsors/SelectQuote_Horiz_Logo-700-149.png" />
+                </a>
+              </div>
+              <div class="KILO_images">
+                <a href="https://www.jhuapl.edu" target="_blank">
+                  <img src="images/sponsors/JHU_APL_logo.png" />
+                </a>
+              </div>
+
+              <div class="KILO_images" style="width: 10%;">
+                <a href="https://jobs.dell.com/" target="_blank">
+                  <img src="images/sponsors/Dell_Logo.webp" />
+                </a>
+              </div>
+              <div class="KILO_images">
+                <a href="https://bisonbytes.org" target="_blank">
                   <img src="images/mario_unknown.png" />
-                </div>
+                </a>
               </div>
             </div>
+            <div style="height: 20px;"></div>
           </div>
-        </div>
-      </div>
-
-      <div
-        class="only_sponsors_window"
-        onclick="move(this)"
-        id="window_sponsors_only"
-        >
-        <div class="window_box">
-          <div class="top_box">
-            <div class="top_click_box">
-              <div class="exit_box" onclick="hideShow(this)">X</div>
-            </div>
-          </div>
-          <div class="sponsor_part">
-            <div class="window_page_extra_space"></div>
-            <div class="sponsor_head">
-              <h3>Sponsors</h3>
-            </div>
-            <div class="sponsor_images">
-              <div class="tera_sponsors">
-                <div class="TERA_images">
-                  <a href="https://www.microsoft.com/en-us/" target="_blank">
-                    <img src="images/sponsors/Microsoft_logo.svg.png" />
-                  </a>
-                </div>
-                <div class="TERA_images">
-                  <a
-                    href="https://www.palantir.com/careers/students/scholarship/future/"
-                    target="_blank"
-                  >
-                    <img src="images/sponsors/Palantir_black.png" />
-                  </a>
-                </div>
-              </div>
-
-              <div class="giga_sponsors">
-                <div class="GIGA_images">
-                  <a href="https://www.dow.com/en-us" target="_blank">
-                    <img
-                      src="images/sponsors/Dow_Chemical_Company_logo.svg.png"
-                    />
-                  </a>
-                </div>
-                <div class="GIGA_images">
-                  <a href="https://www.fanniemae.com/careers" target="_blank">
-                    <img
-                      src="images/sponsors/fannie-mae-logo-white.webp.png"
-                      alt="Electronic Arts Logo"
-                    />
-                  </a>
-                </div>
-                <div style="width: 20px;"></div>
-              </div>
 
 
-              <div class="mega_sponsors">
-                <div class="MEGA_images">
-                  <a
-                    href="https://www.google.com/about/careers/applications/"
-                    target="_blank"
-                  >
-                    <img src="images/sponsors/Google-logo.png" />
-                  </a>
-                </div>
-                <div class="MEGA_images">
-                  <a href="https://careers.united.com/us/en/" target="_blank">
-                    <img src="images/sponsors/United-Airlines-Logo.png" />
-                  </a>
-                </div>
-                <div class="MEGA_images">
-                  <a href="https://www.hudsonrivertrading.com/careers/" target="_blank">
-                    <img src="images/sponsors/hrt_logo.svg.png" />
-                  </a>
-                </div>
-                <div class="MEGA_images">
-                  <a href="https://careers.roblox.com" target="_blank">
-                    <img src="images/sponsors/roblox-logo-white-png-transparent.png" />
-                  </a>
-                </div>
-                <div class="MEGA_images">
-                  <a href="https://www.deshaw.com/careers" target="_blank">
-                    <img src="images/sponsors/de_shaw_logo.png" />
-                  </a>
-                </div>
-                <div class="MEGA_images">
-                  <a href="https://www.northropgrumman.com/careers" target="_blank">
-                    <img src="images/sponsors/Northrop_Grumman_logo_white-on-black.svg.png" />
-                  </a>
-                </div>
-
-                <div class="MEGA_images">
-                  <a href="https://www.redditinc.com/careers" target="_blank">
-                    <img src="images/sponsors/Reddit-Logo.wine.png" />
-                  </a>
-                </div>
-
-              </div>
-             
-
-             <div style="height: 100px;"></div>
-              <div class="kilo_sponsors">
-                
-                <div class="KILO_images">
-                  <a href="https://www3.mtb.com/homepage/diversity-equity-inclusion/join-us" target="_blank">
-                    <img src="images/sponsors/M&T_logo.svg.png" />
-                  </a>
-                </div>
-
-                
-                <div class="KILO_images">
-                  <a href="https://www.selectquote.com/" target="_blank">
-                    <img src="images/sponsors/SelectQuote_Horiz_Logo-700-149.png"/>
-                  </a>
-                </div>
-                <div class="KILO_images">
-                  <a href="https://www.jhuapl.edu" target="_blank">
-                    <img src="images/sponsors/JHU_APL_logo.png"/>
-                  </a>
-                </div>
-                
-                <div class="KILO_images" style="width: 10%;">
-                  <a href="https://jobs.dell.com/" target="_blank">
-                    <img src="images/sponsors/Dell_Logo.webp" />
-                  </a>
-                </div>
-                <div class="KILO_images">
-                  <a href="https://bisonbytes.org" target="_blank">
-                    <img src="images/mario_unknown.png" />
-                  </a>
-                </div>
-              </div>
-              <div style="height: 20px;"></div>
-            </div>
- 
-
-            <h5 style="color: rgb(255, 255, 255)">Intrested in sponsoring?</h5>
-            <h5 style="color: rgb(255, 255, 255)">contact: bisonbytescea@gmail.com </h5>
-
-          </div>
+          <h5 style="color: rgb(255, 255, 255)">Intrested in sponsoring?</h5>
+          <h5 style="color: rgb(255, 255, 255)">contact: bisonbytescea@gmail.com </h5>
 
         </div>
-        
+
       </div>
 
+    </div>
 
 
-      <div class="questionClickme" onclick="move(this);" id="click page">
-        <div class="window_box">
-          <div class="top_box">
-            <div class="top_click_box">
-              <!-- <h3> 
+
+    <div class="questionClickme" onclick="move(this);" id="click page">
+      <div class="window_box">
+        <div class="top_box">
+          <div class="top_click_box">
+            <!-- <h3> 
                 DRAG ME
               </h3> -->
-              
-              <div class="exit_box" onclick="hideShow(this)">X</div>
-            </div>
-            <div class="drag_me">
-              drag the top blue bar to move the winodws
-            </div>
+
+            <div class="exit_box" onclick="hideShow(this)">X</div>
+          </div>
+          <div class="drag_me">
+            drag the top blue bar to move the windows
           </div>
         </div>
       </div>
+    </div>
 
-      <div
-      class="registration_window"
-      onclick="move(this);"
-      id="window_registration"
-    >
+    <div class="registration_window" onclick="move(this);" id="window_registration">
       <div class="window_box">
         <div class="top_box">
           <div class="top_click_box">
@@ -517,12 +408,9 @@
         <div class="registration_page">
           <div class="window_page_extra_space"></div>
           <h1 class="registration_page_tile">BisonBytes 2024 Registration</h1>
-          
+
           <div class="registration_form">
-            <div
-            data-tf-live="01HMYMXGFK32QEP0XMRFV0FP5F"
-            class="bottom_reg"
-          ></div>
+            <div data-tf-live="01HMYMXGFK32QEP0XMRFV0FP5F" class="bottom_reg"></div>
             <script src="//embed.typeform.com/next/embed.js"></script>
 
           </div>
@@ -531,13 +419,42 @@
         </div>
       </div>
     </div>
+
+
+    <!-- <div class="background_imgs">
+      <div class="clouds_img" >
+        uifhweiufhuiwehfuwehfuiwhfuiwhefi
+        <img src="images/cloud_1.png" />
+       
+      </div>
+  
+    </div> -->
+
+    <!-- <div class="background_imgs">
+      <div class="marquee" >
+        uifhweiufhuiwehfuwehfuiwhfuiwhefi
+        <img src="images/cloud_1.png" />
+       
+      </div>
+  
     </div>
+    
+    <div class="marquee-outer">
+      <div class="marquee-inner"><img src="images/cloud_1.png" width="94" height="88" alt="Swimming fish"></div>
+      </div>
+       -->
 
     
+    
+  </div>
 
-    <script src="move_box.js"></script>
-    <script src="main_page_f.js"></script>
-    <script src="main_page_f.js"></script>
-    <script src="app_clicks.js"></script>
-  </body>
+
+
+  <script src="move_box.js"></script>
+  <script src="main_page_f.js"></script>
+  <script src="main_page_f.js"></script>
+  <script src="app_clicks.js"></script>
+  <script src="background_img_f.js"></script>
+</body>
+
 </html>

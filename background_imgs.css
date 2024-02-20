@@ -1,0 +1,99 @@
+/* all from 
+https://www.html.am/html-codes/marquees/css-marquee.cfm */
+
+.background_imgs{
+    top: 20;
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 99999999999;
+
+}
+.background_imgs img{
+    top: 20;
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+}
+.clouds_img img{
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+}
+/* 
+ */
+/*  */
+
+
+/* .marquee {
+    height: 25px;
+    width: 420px;
+  
+    overflow: hidden;
+  } */
+  
+  /* .marquee img {
+    display: block;
+    width: 100%;
+  
+    overflow: hidden;
+  
+    animation: marquee 5s linear infinite;
+  }
+  
+
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  } */
+
+
+  .marquee-outer {
+    height: 100px;	
+    overflow: hidden;
+    position: relative;
+    color: orange;
+   }
+   .marquee-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 5s linear infinite;
+    -webkit-animation: scroll-left 5s linear infinite;
+    animation: scroll-left 5s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+
+   
