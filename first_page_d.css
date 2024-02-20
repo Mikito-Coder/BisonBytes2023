@@ -89,7 +89,7 @@ body {
   position: absolute;
   top: 30%;
   left: 10%;
-  /* display:none; */
+  display:none;
 
 
 
@@ -109,7 +109,7 @@ body {
 
   top: 20%;
   left: 35%;
-
+  z-index: 10;
   /* z-index: 100000000; */
 
 }
@@ -198,7 +198,7 @@ body {
   outline: 3px solid;
 
   box-shadow: 1px 1px 1px 5px rgb(0, 0, 0);
-
+  z-index: 1;
 
 }
 

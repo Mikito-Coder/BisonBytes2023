@@ -20,7 +20,7 @@ window.onload = function () {
 
             //const has_to_be = true;
             if (each_window != null) {
-                console.log("YOOOOOOOO")
+                console.log("YOOOOOOOO", window.width)
 
                 var has_to_be = parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length));
                 var filler = has_to_be > 0;
@@ -156,7 +156,25 @@ function move(ele_clicked) {
                         each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
                         //console.log(mouseX, mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
                         //console.log(parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length)))
+                        // console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
+                        console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
 
+                    }
+                    if (each_window.parentNode.offsetLeft<0){
+                        each_window.parentNode.style.left = 0 + 'px';
+                        console.log("backkkkk")
+                    }
+                    if (each_window.parentNode.offsetTop<0){
+                        each_window.parentNode.style.top = 0 + 'px';
+                        console.log("backkkkk")
+                    }
+                    if (each_window.parentNode.offsetLeft>=window.innerWidth-each_window.parentNode.offsetLeft-5){
+                        each_window.parentNode.style.left = window.innerWidth-each_window.parentNode.offsetLeft-5 + 'px';
+                        console.log("righhtttttt")
+                    }
+                    if (each_window.parentNode.offsetTop>window.innerHeight-each_window.parentNode.offsetHeight){
+                        each_window.parentNode.style.top = window.innerHeight-each_window.parentNode.offsetHeight + 'px';
+                        console.log("bottommmmm")
                     }
 
                 }
