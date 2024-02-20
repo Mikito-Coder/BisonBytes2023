@@ -16,22 +16,24 @@
   vertical-align: middle;
   align-items: center;
 
-  margin: 1rem auto;
+  margin: 0rem auto;
   max-width: calc(100% - 80px);
   display: grid;
   grid-template-columns: repeat(2, minmax(25px, 1fr));
-  gap: 2rem;
+  gap: 4rem;
 
   place-items: center;
 }
 .track_card {
-  width: 120px;
+  width: 160px;
   height: 80px;
   position: relative;
   text-align: center;
 
   transition: transform 1500ms;
   transform-style: preserve-3d;
+  align-items: center;
+
   /*transform: scale(0.4, 0.4);*/
 }
 

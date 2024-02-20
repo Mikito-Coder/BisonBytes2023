@@ -24,6 +24,16 @@ function open_window(ele_clicked) {
         window_2_be_opened = document.getElementById("fqa_page")
 
     }
+    else if(button_id == "open_insta"){
+        window.open("https://www.instagram.com/bison.bytes/", "_blank");
+
+    //     <a
+    //     href="https://www.instagram.com/bison.bytes/"
+    //     target="_blank"
+    //   >
+    //     <img src="images/tumblr_nrfmy1U9Th1uathmoo1_640.png" />
+    //   </a>
+    }
     else{
         console.log("doesn't exits",window_2_be_opened,window_2_be_opened.toString()=="NaN",window_2_be_opened.toString())
     }

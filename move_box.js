@@ -20,7 +20,7 @@ window.onload = function () {
 
             //const has_to_be = true;
             if (each_window != null) {
-                console.log("YOOOOOOOO", window.width)
+                console.log("TOOOOOO", window.width)
 
                 var has_to_be = parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length));
                 var filler = has_to_be > 0;
@@ -39,33 +39,32 @@ window.onload = function () {
                     var w = window.screen.width;
                     
                     var h = window.screen.height;
-                    console.log("NAHHHHHHh",w,h)
+                    console.log("NAHHHHHHh",w,h,each_window.parentNode.offsetLeft,each_window.parentNode.offsetWidth)
 
                     // each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
                     // each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
 
 
 
-
-                    // if (x < 0 || x > each_window.innerWidth - this.state.dialogWidth) {
-                    //     each_window.parentNode.style.left = each_window.innerWidth - this.state.dialogWidth+ 'px';
-
-                    // }
-                    // else{
-                    //     each_window.parentNode.style.left = each_window.parentNode.offsetLeft + mouseX + 'px';
-                    // }
-                    // if (y < 0 || y > each_window.innerHeight - this.state.dialogHeight) {
-                    //     each_window.parentNode.style.top = each_window.innerHeight - this.state.dialogHeight;
-                    // }
-                    // else{
-                    //     each_window.parentNode.style.top = each_window.parentNode.offsetTop + mouseY + 'px';
-
-                    // }
+                    if (each_window.parentNode.offsetLeft<0){
+                        each_window.parentNode.style.left = 0 + 'px';
+                        console.log("backkkkk")
+                    }
+                    if (each_window.parentNode.offsetTop<0){
+                        each_window.parentNode.style.top = 0 + 'px';
+                        console.log("backkkkk")
+                    }
+                    if (w<=each_window.parentNode.offsetLeft){
+                        each_window.parentNode.style.left =w+ 'px';
+                        console.log("WOWWWWWWW:  :EWDQWDQDeqwd",each_window.parentNode.offsetLeft,each_window.parentNode.offsetWidth,w)
+                    }
+                   
+                    if (each_window.parentNode.offsetTop>window.innerHeight-each_window.parentNode.offsetHeight){
+                        each_window.parentNode.style.top = window.innerHeight-each_window.parentNode.offsetHeight + 'px';
+                        console.log("bottommmmm")
+                    }
                     console.log("moved")
-                    //console.log(mouseX, mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
-                    //console.log(parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length)))
-
-
+                   
                 }
                 // stops window from moving off scren
                 
@@ -157,8 +156,9 @@ function move(ele_clicked) {
                         //console.log(mouseX, mouseY, each_window.parentNode.style.left, each_window.parentNode.style.top)
                         //console.log(parseInt(each_window.parentNode.style.left.substring(0, each_window.parentNode.style.length)))
                         // console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
-                        console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
+                        // console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
 
+                        console.log("YOOOOOOOO", window.innerWidth,window.innerHeight,each_window.parentNode.style.left, each_window.parentNode.style.top,each_window.parentNode.clientHeight ,each_window.parentNode.offsetHeight)
                     }
                     if (each_window.parentNode.offsetLeft<0){
                         each_window.parentNode.style.left = 0 + 'px';
@@ -168,9 +168,9 @@ function move(ele_clicked) {
                         each_window.parentNode.style.top = 0 + 'px';
                         console.log("backkkkk")
                     }
-                    if (each_window.parentNode.offsetLeft>=window.innerWidth-each_window.parentNode.offsetLeft-5){
-                        each_window.parentNode.style.left = window.innerWidth-each_window.parentNode.offsetLeft-5 + 'px';
-                        console.log("righhtttttt")
+                    if (each_window.parentNode.offsetLeft+each_window.parentNode.offsetWidth>window.innerWidth){
+                        each_window.parentNode.style.left = window.innerWidth-each_window.parentNode.offsetWidth + 'px';
+                        console.log("UGLYYYYY")
                     }
                     if (each_window.parentNode.offsetTop>window.innerHeight-each_window.parentNode.offsetHeight){
                         each_window.parentNode.style.top = window.innerHeight-each_window.parentNode.offsetHeight + 'px';
