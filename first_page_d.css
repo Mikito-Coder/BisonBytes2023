@@ -142,9 +142,9 @@ body {
 
 .only_sponsors_window {
   width: 500px;
-  min-width: 500px;
+  min-width: 600px;
 
-  height: 600px;
+  height: 700px;
   position: absolute;
   top: 20%;
   right: 0%;
